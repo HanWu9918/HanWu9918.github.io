@@ -59,17 +59,18 @@ content:
     layout: list
     content:
       - layout: left
-        title: Shanghai Jiao Tong University (SJTU)
+        title: <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University (SJTU)</a>
         caption: 2023 - 2027
 
-        sub_title: B.Eng. in Automation (<a href="https://english.seiee.sjtu.edu.cn/english/info/8338.htm">IEEE Pilot Class</a>); Minor in Intellectual Property Law
+        sub_title: B.Eng. in Automation (<a href="https://english.seiee.sjtu.edu.cn/english/info/8338.htm">IEEE Pilot Class</a>); 
+                   Minor in Intellectual Property Law
         
         quote: >
-          A leading research university in China. QS World University Rankings 2025: #45 worldwide; ARWU 2024: #38 worldwide; ShanghaiRanking Best Chinese Universities 2025: #4 in China (Mainland).
+          <a href="https://en.sjtu.edu.cn/">Shanghai Jiao Tong University (SJTU)</a> is a leading research university in China. QS World University Rankings 2025: #45 worldwide; ARWU 2024: #38 worldwide; ShanghaiRanking Best Chinese Universities 2025: #4 in China (Mainland).
         description: |
-          • School: School of Electronic Information and Electrical Engineering (SEIEE)
-          • Honors cohort: IEEE Honors Class (also called IEEE Pilot Class), emphasizing "learning by doing" with mentorship and interdisciplinary training.
-          • Coursework highlights: Signals & Systems, Operating Systems, Data Structures & Algorithms, Probability & Statistics, Artificial Intelligence.
+          - School: <a href="https://english.seiee.sjtu.edu.cn/">School of Electronic Information and Electrical Engineering (SEIEE)</a>
+          - Honors cohort: <a href="https://english.seiee.sjtu.edu.cn/english/info/8338.htm">IEEE Pilot Class</a>, emphasizing "learning by doing" with mentorship and interdisciplinary training.
+          - Coursework highlights: Signals & Systems, Operating Systems, Data Structures & Algorithms, Probability & Statistics, Artificial Intelligence.
 
   - title: Skills & Honors
     layout: list
@@ -78,7 +79,7 @@ content:
         title: Languages
         description: |
           - Chinese (Native)
-          - English: CET-4 630; CET-6 609; IELTS 6.5
+          - English: CET-4 630; CET-6 609
       - layout: left
         title: Programming
         description: |
