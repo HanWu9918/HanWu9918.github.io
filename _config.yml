@@ -10,6 +10,9 @@ name: Han Wu (吴瀚)
 title: Undergraduate Student in Shanghai Jiao Tong University
 address: Shanghai, China
 email: wuhan9918@gmail.com
+#phone: +86 185 1626 9376
+
+
 # website: www.github.com/sproogen/resume-theme
 
 # Dark Mode (true/false/never)
@@ -50,9 +53,11 @@ github_username:  WuHan9918
 # about_title: About Me
 about_profile_image: images/profilewuhan.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Han Wu (吴瀚) and I'm an undergraduate student in Shanghai Jiao Tong University. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
+  Hi, my name's Han Wu (吴瀚). I'm currently an undergraduate student at Shanghai Jiao Tong University, majoring in Automation (IEEE Pilot Class) with a minor in Intellectual Property Law.  
 
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+  My academic interests lie in artificial intelligence, especially large language models (LLMs), as well as software engineering and intelligent systems. I aspire to pursue a career as a researcher or software engineer, focusing on building innovative AI systems and practical applications.  
+
+  Beyond academics, I enjoy track & field, technology writing, and exploring new ideas in law and policy.
 
 content:
   - title: Education
@@ -70,7 +75,8 @@ content:
         description: |
           - School: <a href="https://english.seiee.sjtu.edu.cn/">School of Electronic Information and Electrical Engineering (SEIEE)</a>
           - Honors cohort: <a href="https://english.seiee.sjtu.edu.cn/english/info/8338.htm">IEEE Pilot Class</a>, emphasizing "learning by doing" with mentorship and interdisciplinary training.
-          - Coursework highlights: Signals & Systems, Operating Systems, Data Structures & Algorithms, Probability & Statistics, Artificial Intelligence.
+          - Minor: Intellectual Property Law, with coursework such as International Protection of IP, Anti-Unfair Competition Law, and Cyber IP Law.
+          - Coursework highlights: Computer Vision, Robotics, Deep Learning
 
   - title: Skills & Honors
     layout: list
@@ -94,7 +100,7 @@ content:
     layout: list
     content:
       - layout: top-middle
-        title: To be added – Research & Engineering Portfolio
+        title: To be added - Research & Engineering Portfolio
         quote: >
           A curated selection of academic projects and research will be listed here.
         description: |
