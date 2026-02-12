@@ -10,7 +10,11 @@ name: Han Wu (吴瀚)
 title: Undergraduate Student in Shanghai Jiao Tong University
 address: Shanghai, China
 email: wuhan9918@gmail.com
-#phone: +86 185 1626 9376
+# phone: +86 19355693187  
+# telegram: +44 7521879694
+
+
+
 
 
 # website: www.github.com/sproogen/resume-theme
@@ -89,27 +93,53 @@ content:
       - layout: left
         title: Programming
         description: |
-          - Python
-          - C++
+          - Python (Proficient) - Extensive experience in deep learning and research projects
+          - C++ (Intermediate) - Used for algorithm problems and coursework
+          - JavaScript/CSS (Familiar) - Frontend development for personal projects
       - layout: left
         title: Scholarships & Awards
         description: |
           - Zhiyuan Honors Scholarship (SJTU)
 
-  - title: Projects & Research
+  - title: Research Projects
     layout: list
     content:
       - layout: top-middle
-        title: To be added - Research & Engineering Portfolio
+        title: Aircraft Cabin Anomalous Sound Recognition (COMAC)
         quote: >
-          A curated selection of academic projects and research will be listed here.
+          Deep-learning-based detection and classification of abnormal cabin sounds for commercial aircraft.
         description: |
-          • Template fields you can reuse for each project:
-            - Problem & Goal: one sentence of what you solved
-            - Role: your responsibilities (e.g., model design, evaluation, deployment)
-            - Methods: main techniques/tools (e.g., mDeBERTa router, FastAPI, OpenCompass)
-            - Results: accuracy / latency / cost numbers; ablation or benchmarks
-            - Link(s): GitHub / paper / demo
+          - Advisor: <a href="https://sais.sjtu.edu.cn/faculty/huangzhenyu.html">Prof. Zhenyu Huang</a>
+          - Institution: Institute of Intelligent Mechatronic Systems Control, Shanghai Jiao Tong University
+          - Period: Jun 25, 2024 – Sep 14, 2024
+          - Problem & Goal: Identify and recognize anomalous sounds in aircraft cabins for engineering diagnosis and quality assurance.
+          - Role: Built and trained deep learning models for audio anomaly recognition; delivered analysis and final report.
+          - Methods: audio preprocessing, network design, hyperparameter tuning, training, validation, and performance verification on project data.
+
+      - layout: top-middle
+        title: Efficient Mixture-of-Agents with Dynamic Routing
+        quote: >
+          Reduce MoA cost and latency via pre-inference routing and lightweight judging.
+        description: |
+          - Advisor: <a href="https://sais.sjtu.edu.cn/faculty/yuexinyi.html">Prof. Xinyi Le</a>, <a href="https://jize-w.github.io/">Jize Wang (PhD)</a>
+          - Period: May 2025 - Aug 2025
+          - Status: Under review 
+          - Problem & Goal: Cut inference cost/latency of layered multi-agent collaboration while keeping quality competitive.
+          - Key idea: Use a lightweight scorer to shortlist high-potential agents before inference; then apply a mixture of judges for posterior correction using existing outputs; finally rank agents by performance–cost–latency trade-off.
+          - My contribution: Implemented core routing and evaluation pipeline, trained the scorer, built experiment/ablation runs, and managed experiment artifacts and metrics.
+
+  - title: Practice Projects
+    layout: list
+    content:
+      - layout: top-middle
+        title: Prompt Patch
+        quote: >
+          One-click prompt polishing on AI chat sites via a configurable model backend.
+        description: |
+          - Link: <a href="https://github.com/HanWu9918/Prompt_Patch">GitHub Repository</a>, <a href="https://chromewebstore.google.com/detail/dfggjoimpbaindcocnacfdbkfhepfklh?utm_source=item-share-cb">Chrome Web Store</a>
+          - What it is: A Manifest V3 Chrome extension that injects a floating “Optimize” button and a settings panel near chat inputs.
+          - Key features: read prompt → call configured provider API → write optimized prompt back; one-click Undo; multi-provider support; style templates; output-language policy.
+          - Tech stack: MV3 (service worker + content script), vanilla JavaScript/CSS, chrome.storage.local for local-only settings.
 
   - title: A Little More About Me
     layout: text
