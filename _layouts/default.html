@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+{%- include head.html -%}
+
+<body class="{% if site.darkmode == true and site.darkmode != 'never' %}dark{% endif %}">
+
+  <!-- Dark Mode Toggle Button -->
+  <button id="darkmode-toggle" class="darkmode-toggle no-print" title="Toggle dark mode" aria-label="Toggle dark mode">
+    <i class="fas fa-moon" id="darkmode-icon"></i>
+  </button>
+
+  {%- include header.html -%}
+
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+
+      {%- if jekyll.environment == 'production' and site.gtm -%}
+        {%- include gtm_body.html -%}
+      {%- endif -%}
+
+      {%- include about.html -%}
+
+      {%- if site.version == 2 -%}
+        {% for section in site.content %}
+          <div class="container {{ section.layout }}-container">
+            <h3 id="{{ section.title | slugify }}">{{ section.title }}</h3>
+            {% include {{ section.layout | prepend: "section-" | append: ".html" }} content=section.content %}
+          </div>
+        {% endfor %}
+      {% else %}
+        {%- include v1/default.html -%}
+      {%- endif -%}
+    </div>
+  </main>
+
+  {%- include footer.html -%}
+
+  <script>
+    (function() {
+      var STORAGE_KEY = 'darkmode-preference';
+      var body = document.body;
+      var toggle = document.getElementById('darkmode-toggle');
+      var icon = document.getElementById('darkmode-icon');
+
+      // Determine initial state
+      // Priority: localStorage > OS preference > config default
+      var stored = localStorage.getItem(STORAGE_KEY);
+      var configDark = {{ site.darkmode | jsonify }};
+
+      if (stored === 'dark') {
+        body.classList.add('dark');
+      } else if (stored === 'light') {
+        body.classList.remove('dark');
+      } else if (configDark === true) {
+        // Already set by server-side class
+      } else if (configDark === false) {
+        // Respect OS preference when no user choice stored
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          body.classList.add('dark');
+        }
+      }
+      // configDark === 'never' → do nothing, stay light
+
+      function updateIcon() {
+        if (body.classList.contains('dark')) {
+          icon.className = 'fas fa-sun';
+          toggle.title = 'Switch to light mode';
+        } else {
+          icon.className = 'fas fa-moon';
+          toggle.title = 'Switch to dark mode';
+        }
+      }
+
+      updateIcon();
+
+      toggle.addEventListener('click', function() {
+        body.classList.toggle('dark');
+        var isDark = body.classList.contains('dark');
+        localStorage.setItem(STORAGE_KEY, isDark ? 'dark' : 'light');
+        updateIcon();
+      });
+    })();
+  </script>
+</body>
+
+</html>

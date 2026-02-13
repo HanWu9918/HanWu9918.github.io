@@ -10,8 +10,8 @@ name: Han Wu (吴瀚)
 title: Undergraduate Student in Shanghai Jiao Tong University
 address: Shanghai, China
 email: wuhan9918@gmail.com
-# phone: +86 19355693187  
-# telegram: +44 7521879694
+phone: "+86 19355693187"
+telegram: "+44 7521879694"
 
 
 
@@ -38,14 +38,10 @@ github_username:  WuHan9918
 # orcid_username: 0000-0000-0000-0000
 
 # Additional icon links
-# additional_links:
-# - title: itsgoingto.be
-#   icon: fas fa-globe
-#   url: https://www.itsgoingto.be
-
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
-#   url: Link url (eg. https://google.com)
+additional_links:
+  - title: Telegram
+    icon: fab fa-telegram
+    url: https://t.me/+447521879694
 
 # Google Analytics and Tag Manager
 # Using more than one of these may cause issues with reporting

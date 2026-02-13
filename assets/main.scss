@@ -3,3 +3,89 @@
 ---
 
 @import 'modern-resume-theme';
+
+/* ===== Dark Mode Toggle Button ===== */
+.darkmode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  padding: 0;
+  line-height: 1;
+  appearance: none;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.darkmode-toggle:hover {
+  background: #f0f0f0;
+  border-color: #999;
+  transform: scale(1.1);
+}
+
+.darkmode-toggle:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(71, 125, 202, 0.4);
+}
+
+.dark .darkmode-toggle {
+  background: #333;
+  color: #f0c040;
+  border-color: #555;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.dark .darkmode-toggle:hover {
+  background: #444;
+  border-color: #777;
+}
+
+/* Smooth transition for dark mode */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ===== Contact Info Icons ===== */
+.contact-icon {
+  width: 1.4em;
+  text-align: center;
+  margin-right: 4px;
+  font-size: 1.4rem;
+  vertical-align: middle;
+  opacity: 0.7;
+}
+
+.header-right p .contact-icon {
+  color: inherit;
+}
+
+/* ===== Print: hide toggle ===== */
+@media print {
+  .darkmode-toggle {
+    display: none !important;
+  }
+}
+
+/* ===== Mobile adjustments ===== */
+@media screen and (max-width: 767px) {
+  .darkmode-toggle {
+    top: 10px;
+    right: 10px;
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+}
