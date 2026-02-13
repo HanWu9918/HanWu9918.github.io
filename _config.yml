@@ -30,7 +30,7 @@ github_username:  WuHan9918
 # facebook_username: jekyll
 # flickr_username: jekyll
 #instagram_username: jameswgrant
-#linkedin_username: jameswgrant
+linkedin_username: han-wu-4022a9364
 # xing_username: jekyll
 # pinterest_username: jekyll
 #youtube_username: globalmtb
@@ -58,6 +58,8 @@ about_content: | # this will include new lines to allow paragraphs
   My academic interests lie in artificial intelligence, especially large language models (LLMs), as well as software engineering and intelligent systems. I aspire to pursue a career as a researcher or software engineer, focusing on building innovative AI systems and practical applications.  
 
   Beyond academics, I enjoy track & field, technology writing, and exploring new ideas in law and policy.
+
+  <strong><a href="/assets/resume_en.pdf" target="_blank" rel="noopener">English resume</a></strong>  <strong><a href="/assets/resume_cn.pdf" target="_blank" rel="noopener">中文简历</a></strong>
 
 content:
   - title: Education
@@ -107,7 +109,7 @@ content:
         description: |
           - Advisor: <a href="https://sais.sjtu.edu.cn/faculty/huangzhenyu.html">Prof. Zhenyu Huang</a>
           - Institution: Institute of Intelligent Mechatronic Systems Control, Shanghai Jiao Tong University
-          - Period: Jun 25, 2024 – Sep 14, 2024
+          - Period: Jun 2024 – Sep 2024
           - Problem & Goal: Identify and recognize anomalous sounds in aircraft cabins for engineering diagnosis and quality assurance.
           - Role: Built and trained deep learning models for audio anomaly recognition; delivered analysis and final report.
           - Methods: audio preprocessing, network design, hyperparameter tuning, training, validation, and performance verification on project data.

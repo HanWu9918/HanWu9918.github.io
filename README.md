@@ -150,7 +150,7 @@ bundle update
 
 **Port already in use:**
 ```bash
-bundle exec jekyll serve --port 4001
+bundle exec jekyll serve --port 4000
 ```
 
 ## 📄 License
