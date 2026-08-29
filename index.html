@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Han Wu (吴翰) — Academic Homepage</title>
+<title>Han Wu (吴瀚) — AI Agents &amp; Foundation Model Evaluation</title>
+<meta name="description" content="Han Wu is an SJTU undergraduate working on AI agents, foundation-model evaluation, and multimodal evaluation." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
@@ -388,7 +389,15 @@
     margin-bottom: 22px;
     box-shadow: var(--shadow);
     border: 4px solid var(--avatar-border);
+    overflow: hidden;
     transition: background 0.5s ease, border-color 0.5s ease, color 0.5s ease;
+  }
+  .avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 33%;
   }
   .sidebar h1 {
     font-family: "EB Garamond", "Lora", serif;
@@ -663,6 +672,12 @@
     font-size: 14px;
     color: var(--text-muted);
     font-style: italic;
+  }
+  .proj-summary {
+    margin-top: 7px;
+    font-size: 14.5px;
+    color: var(--text-soft);
+    line-height: 1.55;
   }
 
   /* ---------- Skills / Languages ---------- */
@@ -987,8 +1002,10 @@
     border: 1.5px solid var(--accent);
     transition: background 0.18s ease, transform 0.15s ease;
     box-shadow: var(--shadow);
-    opacity: 0.55;
-    cursor: not-allowed;
+  }
+  .cv-btn-lg-secondary:hover {
+    background: var(--accent-soft);
+    transform: translateY(-1px);
   }
   .cv-btn-lg-secondary svg { width: 17px; height: 17px; }
   .cv-btn-lg-secondary .placeholder-note {
@@ -1202,13 +1219,13 @@
 <nav class="topnav">
   <div class="nav-inner">
     <a href="#" class="nav-brand en-only">Han Wu<span class="dot">.</span></a>
-    <a href="#" class="nav-brand zh-only">吴翰<span class="dot">.</span></a>
+    <a href="#" class="nav-brand zh-only">吴瀚<span class="dot">.</span></a>
     <ul class="nav-links">
       <li><a href="#about" class="nav-lang-en">About</a><a href="#about" class="nav-lang-zh">关于我</a></li>
-      <li><a href="#publications" class="nav-lang-en">Publications</a><a href="#publications" class="nav-lang-zh">学术成果</a></li>
-      <li><a href="#experience" class="nav-lang-en">Experience</a><a href="#experience" class="nav-lang-zh">经历</a></li>
-      <li><a href="#projects" class="nav-lang-en">Projects</a><a href="#projects" class="nav-lang-zh">项目</a></li>
-      <li><a href="#resume" class="nav-lang-en">Resume</a><a href="#resume" class="nav-lang-zh">简历</a></li>
+      <li><a href="#education" class="nav-lang-en">Education</a><a href="#education" class="nav-lang-zh">教育背景</a></li>
+      <li><a href="#publications" class="nav-lang-en">Publications</a><a href="#publications" class="nav-lang-zh">论文发表</a></li>
+      <li><a href="#experience" class="nav-lang-en">Research &amp; Industry</a><a href="#experience" class="nav-lang-zh">科研与产业实践</a></li>
+      <li><a href="#projects" class="nav-lang-en">Engineering Projects</a><a href="#projects" class="nav-lang-zh">工程项目</a></li>
     </ul>
   </div>
 </nav>
@@ -1218,19 +1235,17 @@
 
   <!-- ---------- SIDEBAR ---------- -->
   <aside class="sidebar">
-    <div class="avatar">WH</div>
+    <div class="avatar"><img src="assets/images/han-wu.jpg" alt="Portrait of Han Wu" /></div>
     <h1>Han Wu</h1>
-    <div class="name-cn">吴翰</div>
+    <div class="name-cn">吴瀚</div>
     <div class="title en-only">
-      B.Eng. in Automation,<br />
-      Minored in Law (Intellectual Property),<br />
-      IEEE Honor Class,<br />
+      Full-time B.Eng. Candidate in Automation,<br />
+      Minor in Law (Intellectual Property),<br />
       Shanghai Jiao Tong University
     </div>
     <div class="title zh-only">
-      上海交通大学 · <br />
-      自动化（IEEE试点班）<br />
-      工学学士 · 辅修法学（知识产权）
+      上海交通大学 · 自动化（IEEE试点班）<br />
+      工学学士在读 · 辅修法学（知识产权）
     </div>
     <ul class="contact-list">
       <li>
@@ -1250,21 +1265,6 @@
       </li>
     </ul>
 
-    <div class="cv-btn-group">
-      <a href="../../cv_en.pdf" class="cv-btn en-only">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
-        View English CV
-      </a>
-      <a href="../../cv_en.pdf" class="cv-btn zh-only">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
-        查看英文简历
-      </a>
-      <span class="cv-btn-secondary" title="Coming soon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
-        <span class="en-only">Chinese CV</span><span class="zh-only">中文简历</span>
-        <span class="placeholder-note en-only">Coming soon</span><span class="placeholder-note zh-only">即将上线</span>
-      </span>
-    </div>
   </aside>
 
   <!-- ---------- MAIN ---------- -->
@@ -1275,11 +1275,39 @@
       <h2 class="en-only">About</h2>
       <h2 class="zh-only">关于我</h2>
       <p class="en-only">
-        I am a final-year undergraduate at Shanghai Jiao Tong University (SJTU), majoring in Automation within the IEEE Honor Class, with a minor in Law (Intellectual Property). My research interests span large language models, multi-agent systems, and multimodal evaluation. I have been fortunate to be advised by Prof. Xinyi Le and collaborate with Shanghai AI Laboratory. My work on dynamic routing for Mixture-of-Agents has been accepted to ACL 2026 as a main-conference long paper.
+        I am a final-year undergraduate at Shanghai Jiao Tong University, pursuing a B.Eng. in Automation in the IEEE Honor Class with a minor in Law (Intellectual Property). I work at the intersection of AI agents, foundation-model evaluation, and multimodal evaluation—turning open-ended model behaviour into reliable benchmarks, data, and tooling. My work on dynamic routing for Mixture-of-Agents was accepted as an ACL 2026 main-conference long paper.
+      </p>
+      <p class="en-only">
+        I am preparing applications to master's programmes, including at The Chinese University of Hong Kong (CUHK) and Cornell University. I am also seeking internship opportunities with leading foundation-model and multimodal-evaluation teams in China and internationally, and welcome conversations with academic labs. I am particularly interested in agent evaluation, LLM-as-a-Judge and human-in-the-loop evaluation, and evaluation for image and video generation.
       </p>
       <p class="zh-only">
-        上海交通大学自动化专业（IEEE试点班）本科四年级，辅修法学（知识产权方向）。研究兴趣涵盖大语言模型、多智能体系统以及多模态评测。有幸在乐心怡教授的指导下开展研究，并与上海人工智能实验室合作。关于动态路由的混合智能体架构（Mixture-of-Agents）研究工作已被 ACL 2026 主会长文录用。
+        我是上海交通大学自动化专业（IEEE试点班）本科四年级学生，辅修法学（知识产权方向）。我关注 AI Agent、基础模型评测与多模态评测，致力于将开放式的模型能力转化为可靠的评测基准、数据与工具。关于混合智能体动态路由的研究工作已作为 ACL 2026 主会长文录用。
       </p>
+      <p class="zh-only">
+        我正在申请包括香港中文大学、康奈尔大学在内的硕士项目，同时寻找国内外领先基础模型与多模态评测团队的实习机会，也期待与相关研究课题组交流合作。尤其关注智能体评测、LLM-as-a-Judge 与人机协同评测，以及图像和视频生成模型的评测。
+      </p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2 class="en-only">Education</h2>
+      <h2 class="zh-only">教育背景</h2>
+      <div class="edu-block exp">
+        <div class="exp-head">
+          <div class="exp-org en-only">Shanghai Jiao Tong University</div>
+          <div class="exp-org zh-only">上海交通大学</div>
+          <div class="exp-date en-only">Aug 2023 – Jul 2027 (Expected)</div>
+          <div class="exp-date zh-only">2023 年 8 月 – 2027 年 7 月（预计）</div>
+        </div>
+        <div class="exp-role en-only">Full-time B.Eng. in Automation, IEEE Honor Class</div>
+        <div class="exp-role zh-only">全日制工学学士 · 自动化（IEEE试点班）</div>
+        <div class="edu-meta en-only"><strong>School:</strong> School of Electronic Information and Electrical Engineering. <strong>Minor:</strong> Law (Intellectual Property).</div>
+        <div class="edu-meta zh-only"><strong>学院：</strong>电子信息与电气工程学院。<strong>辅修：</strong>法学（知识产权方向）。</div>
+        <div class="edu-courses en-only"><strong>Core coursework:</strong> Artificial Intelligence Principles and Applications, Machine Learning, Computer Vision, and Robotics.</div>
+        <div class="edu-courses zh-only"><strong>核心课程：</strong>人工智能原理与应用、机器学习、计算机视觉、机器人学。</div>
+        <div class="edu-honor en-only">Zhiyuan Honors Scholarship, Shanghai Jiao Tong University · IELTS 7.0 · CET-6 609 · CET-4 630.</div>
+        <div class="edu-honor zh-only">上海交通大学致远荣誉奖学金 · 雅思 7.0 · 大学英语六级 609 · 大学英语四级 630。</div>
+      </div>
     </section>
 
     <!-- PUBLICATIONS -->
@@ -1304,11 +1332,11 @@
         <div class="pub">
           <div class="pub-title en-only">FilmBench: A Film-Grade Benchmark for Cinematic Video Generation</div>
           <div class="pub-title zh-only">FilmBench：面向电影级视频生成的高质量评测基准</div>
-          <div class="pub-authors">Shengyi Wang, Niantong Li, ..., <span class="me">Han Wu</span>, et al.</div>
-          <div class="pub-venue en-only">arXiv preprint, under review at AAAI 2027</div>
-          <div class="pub-venue zh-only">arXiv 预印本，已投 AAAI 2027（审稿中）</div>
+          <div class="pub-authors">Teamwork at Alibaba Group</div>
+          <div class="pub-venue en-only">arXiv preprint; submitted to AAAI 2027</div>
+          <div class="pub-venue zh-only">arXiv 预印本；AAAI 2027 在投</div>
           <div class="pub-links">
-            <span class="badge badge-outline">Under Review</span>
+            <span class="badge badge-outline">AAAI 2027 Submission</span>
             <a class="pub-link" href="https://arxiv.org/abs/2607.24241" target="_blank" rel="noopener">Paper</a>
             <a class="pub-link" href="https://github.com/Neo-yk/FilmOps" target="_blank" rel="noopener">Code</a>
           </div>
@@ -1319,41 +1347,41 @@
 
     <!-- EXPERIENCE -->
     <section id="experience">
-      <h2 class="en-only">Experience</h2>
-      <h2 class="zh-only">经历</h2>
+      <h2 class="en-only">Research &amp; Industry</h2>
+      <h2 class="zh-only">科研与产业实践</h2>
       <div class="exp-list">
 
         <div class="exp">
           <div class="exp-head">
-            <div class="exp-org en-only">Alibaba Group, AI Data Team</div>
-            <div class="exp-org zh-only">阿里巴巴集团 · AI 数据团队</div>
+            <div class="exp-org en-only">Alibaba Group Holding Limited</div>
+            <div class="exp-org zh-only">阿里巴巴控股集团</div>
             <div class="exp-date">Jun 2026 – Present</div>
           </div>
-          <div class="exp-role en-only">AI-Sparks Intern (Multimodal Benchmarking)</div>
-          <div class="exp-role zh-only">AI-Sparks 实习（多模态评测方向）</div>
+          <div class="exp-role en-only">Foundation Model Evaluation Intern · Data Technology and Products Department</div>
+          <div class="exp-role zh-only">大模型评测实习生 · 数据技术与产品部</div>
           <div class="exp-loc en-only">Hangzhou</div>
           <div class="exp-loc zh-only">杭州</div>
           <div class="exp-desc en-only">
-            Working on FilmBench (T2V/R2V benchmark) evaluating Seedance 2.0, Kling 3.0, Veo 3.1 etc.; and QwenEditBench for image editing evaluation, planned ICLR 2027 submission.
+            Contributing to FilmBench, a film-grade T2V/R2V benchmark submitted to AAAI 2027, through model evaluation and annotation guidelines for cinematography, multi-shot continuity, instruction following, and motion aesthetics. Also supporting QwenEditBench, an open-source image-editing benchmark developed with Tongyi Lab, and quality-checking a subset of training data for the Qwen-Image team.
           </div>
           <div class="exp-desc zh-only">
-            参与 FilmBench（文生视频/图生视频评测基准）对 Seedance 2.0、可灵 3.0、Veo 3.1 等模型进行系统评测；同时负责图像编辑评测基准 QwenEditBench 的搭建，计划投 ICLR 2027。
+            参与 FilmBench（电影级文生视频/图生视频评测基准，AAAI 2027 在投），从镜头语言、多镜头连续性、指令遵循和动态美学等维度开展模型评测与标注规范设计；同时参与与通义实验室合作的开源图像编辑评测基准 QwenEditBench，并为 Qwen-Image 团队提供部分训练数据的整理与质检支持。
           </div>
         </div>
 
         <div class="exp">
           <div class="exp-head">
-            <div class="exp-org en-only">Shanghai AI Laboratory &amp; SJTU</div>
-            <div class="exp-org zh-only">上海人工智能实验室 &amp; 上海交通大学</div>
+            <div class="exp-org en-only">RouteMoA: Dynamic Routing for Efficient Mixture-of-Agents</div>
+            <div class="exp-org zh-only">RouteMoA：面向高效混合智能体的动态路由方法</div>
             <div class="exp-date">May 2025 – Sep 2025</div>
           </div>
-          <div class="exp-role en-only">Researcher / Project Co-Lead</div>
-          <div class="exp-role zh-only">研究员 / 项目共同负责人</div>
+          <div class="exp-role en-only">Project Co-Lead / Co-Author</div>
+          <div class="exp-role zh-only">项目共同负责人 / 论文作者</div>
           <div class="exp-desc en-only">
-            RouteMoA project under Prof. Xinyi Le. Built dynamic routing MoA with mDeBERTaV3 router, reduced inference cost 89.8%, latency 63.6%. ACL 2026 paper.
+            Co-developed a dynamic-routing MoA framework and its evaluation stack across more than 20,000 QA examples. Compared with MoA and SMoA, the approach maintained stronger performance while reducing large-pool inference cost by 89.8% and latency by 63.6%; accepted as an ACL 2026 long paper.
           </div>
           <div class="exp-desc zh-only">
-            在乐心怡教授指导下主导 RouteMoA 项目，基于 mDeBERTaV3 路由实现动态路由的混合智能体架构；推理成本下降 89.8%，延迟下降 63.6%。相关工作被 ACL 2026 录用。
+            共同构建动态路由 MoA 框架及覆盖超过 2 万条问答样本的评测栈；与 MoA、SMoA 对比后，在保持更优效果的同时将大模型池推理成本降低 89.8%、延迟降低 63.6%。相关成果作为 ACL 2026 主会长文录用。
           </div>
         </div>
 
@@ -1363,42 +1391,24 @@
             <div class="exp-org zh-only">上海交通大学 &amp; 中国商飞</div>
             <div class="exp-date">Jun 2024 – Sep 2024</div>
           </div>
-          <div class="exp-role en-only">Research Assistant</div>
-          <div class="exp-role zh-only">研究助理</div>
+          <div class="exp-role en-only">Core Member, SJTU–COMAC Collaborative Project</div>
+          <div class="exp-role zh-only">上海交通大学—中国商飞合作项目核心成员</div>
           <div class="exp-desc en-only">
-            Aircraft cabin anomalous sound recognition under Assoc. Prof. Zhenyu Huang. MobileNetV3 classifier, 98.01% accuracy across 12 classes.
+            Built a MobileNetV3-based classifier for 12 types of aircraft-cabin anomalies, combining realistic-noise augmentation and strong-noise validation. Achieved 98.01% average accuracy and CPU inference below 20 ms for 0.4–1 s clips.
           </div>
           <div class="exp-desc zh-only">
-            在黄振宇副教授指导下，负责飞机客舱异常声音识别课题，基于 MobileNetV3 实现 12 类异常声音分类，准确率 98.01%。
+            面向 12 类飞机客舱异常声音，构建基于 MobileNetV3 的轻量级分类器，并结合真实飞行噪声增强与强噪声测试；平均准确率达 98.01%，0.4–1 秒片段的 CPU 推理耗时低于 20 ms。
           </div>
         </div>
 
       </div>
 
-      <h2 class="en-only" style="margin-top: 36px;">Education</h2>
-      <h2 class="zh-only" style="margin-top: 36px;">教育背景</h2>
-      <div class="edu-block exp">
-        <div class="exp-head">
-          <div class="exp-org en-only">Shanghai Jiao Tong University</div>
-          <div class="exp-org zh-only">上海交通大学</div>
-          <div class="exp-date en-only">Aug 2023 – Jul 2027 (Expected)</div>
-          <div class="exp-date zh-only">2023 年 8 月 – 2027 年 7 月（预计）</div>
-        </div>
-        <div class="exp-role en-only">B.Eng. in Automation, IEEE Honor Class</div>
-        <div class="exp-role zh-only">工学学士 · 自动化（IEEE试点班）</div>
-        <div class="edu-meta en-only"><strong>Minor:</strong> Law (Intellectual Property). <strong>GPA:</strong> 3.36 / 4.30.</div>
-        <div class="edu-meta zh-only"><strong>辅修：</strong>法学（知识产权方向）。<strong>绩点：</strong>3.36 / 4.30。</div>
-        <div class="edu-courses en-only"><strong>Selected Coursework:</strong> Video Multimedia Retrieval (A+), Robotics (A+), AI Principles (A), Computer Vision (A).</div>
-        <div class="edu-courses zh-only"><strong>核心课程：</strong>视频多媒体检索（A+）、机器人学（A+）、人工智能原理（A）、计算机视觉（A）。</div>
-        <div class="edu-honor en-only">Zhiyuan Honors Scholarship.</div>
-        <div class="edu-honor zh-only">荣获致远荣誉奖学金。</div>
-      </div>
     </section>
 
     <!-- PROJECTS -->
     <section id="projects">
-      <h2 class="en-only">Projects</h2>
-      <h2 class="zh-only">项目</h2>
+      <h2 class="en-only">Selected Engineering Projects</h2>
+      <h2 class="zh-only">代表性工程项目</h2>
       <div class="proj-list">
 
         <div class="proj">
@@ -1407,9 +1417,11 @@
               <a href="https://github.com/HanWu9918/AI3705_project" target="_blank" rel="noopener" class="en-only">Multi-Agent Production Planning System</a>
               <a href="https://github.com/HanWu9918/AI3705_project" target="_blank" rel="noopener" class="zh-only">多智能体生产计划与调度系统</a>
             </div>
-            <span class="proj-score">96 / 100 · A+</span>
+            <span class="proj-score">May – Jun 2026</span>
           </div>
           <div class="proj-tech">CoppeliaSim, LLM Agents</div>
+          <div class="proj-summary en-only">Built a dual-line flexible-manufacturing simulator with natural-language order parsing and a three-agent planning architecture for coordinated assembly, transfer, inspection, and collision-aware shuttle control.</div>
+          <div class="proj-summary zh-only">构建双产线柔性制造仿真系统，支持自然语言订单解析，并以三智能体架构协同完成装配、物料转运、质检与避碰控制。</div>
         </div>
 
         <div class="proj">
@@ -1418,10 +1430,12 @@
               <a href="https://github.com/PasserbyZzz/LLMBilliardsMaster" target="_blank" rel="noopener" class="en-only">AI Agents for Strategic Billiards Play</a>
               <a href="https://github.com/PasserbyZzz/LLMBilliardsMaster" target="_blank" rel="noopener" class="zh-only">基于智能体的台球战术决策系统</a>
             </div>
-            <span class="proj-score">93.5 / 100 · A</span>
+            <span class="proj-score">Feb – Jul 2026</span>
           </div>
           <div class="proj-tech en-only">MCTS, Bayesian Optimization</div>
           <div class="proj-tech zh-only">蒙特卡洛树搜索（MCTS）, 贝叶斯优化</div>
+          <div class="proj-summary en-only">Developed a physics-grounded eight-ball agent that combines geometric shot modelling, MCTS, Bayesian optimisation, and iterative LLM replanning; the strongest specialised agent reached an 86.75% win rate against baselines.</div>
+          <div class="proj-summary zh-only">开发面向八球台球的物理建模智能体，结合几何击球建模、MCTS、贝叶斯优化与迭代式 LLM 重规划；最强专用智能体相对基线胜率达 86.75%。</div>
         </div>
 
         <div class="proj">
@@ -1430,9 +1444,11 @@
               <a href="https://github.com/PasserbyZzz/PlateRecognition" target="_blank" rel="noopener" class="en-only">License Plate Recognition System</a>
               <a href="https://github.com/PasserbyZzz/PlateRecognition" target="_blank" rel="noopener" class="zh-only">车牌识别系统</a>
             </div>
-            <span class="proj-score">99 / 100 · A+</span>
+            <span class="proj-score">Nov 2024 – Jan 2025</span>
           </div>
           <div class="proj-tech">OpenCV, PyTorch, LPRNet</div>
+          <div class="proj-summary en-only">Delivered an end-to-end license-plate recognition workflow—from image preprocessing and localisation to LPRNet inference and a PyQt5 desktop interface—with 86% character-level accuracy.</div>
+          <div class="proj-summary zh-only">完成从图像预处理、车牌定位到 LPRNet 推理与 PyQt5 桌面界面的端到端车牌识别流程，单字符识别准确率达 86%。</div>
         </div>
 
       </div>
@@ -1458,6 +1474,7 @@
         <div class="skill-block">
           <h3 class="en-only">English</h3>
           <h3 class="zh-only">英语</h3>
+          <div class="lang-line"><strong>IELTS:</strong> 7.0</div>
           <div class="lang-line"><strong>CET-4:</strong> 630</div>
           <div class="lang-line"><strong>CET-6:</strong> 609</div>
         </div>
@@ -1469,22 +1486,21 @@
       <h2 class="en-only">Resume</h2>
       <h2 class="zh-only">简历</h2>
       <div class="resume-box">
-        <p class="en-only">For a complete overview of my academic background, research experience, and projects, please view my full CV. The Chinese version will be uploaded shortly.</p>
-        <p class="zh-only">完整的学术背景、研究经历与项目信息请查阅我的简历。中文简历即将更新上线。</p>
+        <p class="en-only">For a fuller account of my academic background, research, and engineering work, please download my CV.</p>
+        <p class="zh-only">如需了解完整的教育背景、研究经历与工程项目，请下载我的简历。</p>
         <div class="cv-btn-lg-group">
-          <a href="../../cv_en.pdf" class="cv-btn-lg en-only">
+          <a href="assets/cv/han-wu-cv-en.pdf" class="cv-btn-lg en-only" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
             English CV (PDF)
           </a>
-          <a href="../../cv_en.pdf" class="cv-btn-lg zh-only">
+          <a href="assets/cv/han-wu-cv-en.pdf" class="cv-btn-lg zh-only" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
             英文简历 (PDF)
           </a>
-          <span class="cv-btn-lg-secondary" title="Coming soon">
+          <a href="assets/cv/han-wu-cv-zh.pdf" class="cv-btn-lg-secondary" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
             <span class="en-only">Chinese CV</span><span class="zh-only">中文简历</span>
-            <span class="placeholder-note en-only">Coming soon</span><span class="placeholder-note zh-only">即将上线</span>
-          </span>
+          </a>
         </div>
       </div>
     </section>
@@ -1494,8 +1510,8 @@
 
 <!-- ============ FOOTER ============ -->
 <footer>
-  <span class="en-only">&copy; 2026 Han Wu (吴翰) · Shanghai Jiao Tong University</span>
-  <span class="zh-only">&copy; 2026 吴翰 · 上海交通大学</span>
+  <span class="en-only">&copy; 2026 Han Wu (吴瀚) · Shanghai Jiao Tong University</span>
+  <span class="zh-only">&copy; 2026 吴瀚 · 上海交通大学</span>
   &nbsp;|&nbsp; <span class="en-only">Last updated:</span><span class="zh-only">最后更新：</span> <span id="last-updated">August 23, 2026</span>
 </footer>
 
@@ -1732,9 +1748,9 @@
 
     function setTitle(lang) {
       if (lang === "zh") {
-        document.title = "吴翰 — 个人学术主页";
+        document.title = "吴瀚 — AI Agent 与基础模型评测";
       } else {
-        document.title = "Han Wu (吴翰) — Academic Homepage";
+        document.title = "Han Wu (吴瀚) — AI Agents & Foundation Model Evaluation";
       }
     }
 
