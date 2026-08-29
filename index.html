@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cream">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Han Wu (吴翰) — Academic Homepage</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap"
+  rel="stylesheet"
+/>
+<style>
+  :root,
+  [data-theme="cream"] {
+    --bg: #faf5ea;
+    --bg-sidebar: #f2ead8;
+    --text: #3a342a;
+    --text-soft: #5a5245;
+    --text-muted: #8a8070;
+    --accent: #b8860b;
+    --accent-hover: #9a7209;
+    --accent-soft: #f5ecd4;
+    --rule: #d9ccaa;
+    --rule-soft: #e8dfc5;
+    --badge-dark: #5a4a2a;
+    --badge-outline: #8a7a50;
+    --shadow: 0 1px 3px rgba(120, 90, 30, 0.10);
+    --proj-shadow: 0 4px 12px rgba(120, 90, 30, 0.12);
+    --nav-bg: rgba(250, 245, 234, 0.92);
+    --avatar-from: #b8860b;
+    --avatar-to: #d4a942;
+    --avatar-border: #ffffff;
+    --on-accent: #ffffff;
+    --particle-opacity: 0;
+    --particle-color: 255, 150, 180;
+  }
+
+  [data-theme="white"] {
+    --bg: #ffffff;
+    --bg-sidebar: #f5f6f8;
+    --text: #1a1d24;
+    --text-soft: #444b55;
+    --text-muted: #7a8090;
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
+    --accent-soft: #e8f0ff;
+    --rule: #e0e4ec;
+    --rule-soft: #eef0f5;
+    --badge-dark: #1e293b;
+    --badge-outline: #64748b;
+    --shadow: 0 1px 3px rgba(0, 20, 60, 0.08);
+    --proj-shadow: 0 4px 12px rgba(0, 20, 60, 0.10);
+    --nav-bg: rgba(255, 255, 255, 0.92);
+    --avatar-from: #2563eb;
+    --avatar-to: #3b82f6;
+    --avatar-border: #ffffff;
+    --on-accent: #ffffff;
+    --particle-opacity: 0;
+    --particle-color: 150, 180, 255;
+  }
+
+  [data-theme="black"] {
+    --bg: #0a0a0a;
+    --bg-sidebar: #141414;
+    --text: #e8e8e8;
+    --text-soft: #b0b0b0;
+    --text-muted: #787878;
+    --accent: #64ffda;
+    --accent-hover: #4ade80;
+    --accent-soft: rgba(100, 255, 218, 0.10);
+    --rule: #2a2a2a;
+    --rule-soft: #1e1e1e;
+    --badge-dark: #1a2a28;
+    --badge-outline: #6a8a82;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    --proj-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    --nav-bg: rgba(10, 10, 10, 0.92);
+    --avatar-from: #0f766e;
+    --avatar-to: #0d9488;
+    --avatar-border: #1a1a1a;
+    --on-accent: #0a0a0a;
+    --particle-opacity: 0;
+    --particle-color: 100, 255, 218;
+  }
+
+  [data-theme="sakura"] {
+    --bg: #fff5f8;
+    --bg-sidebar: #ffe8ef;
+    --text: #4a2030;
+    --text-soft: #6a3545;
+    --text-muted: #a06070;
+    --accent: #e91e63;
+    --accent-hover: #c2185b;
+    --accent-soft: #ffe0eb;
+    --rule: #f0c8d4;
+    --rule-soft: #f8dde6;
+    --badge-dark: #881038;
+    --badge-outline: #b04068;
+    --shadow: 0 1px 3px rgba(180, 60, 100, 0.10);
+    --proj-shadow: 0 4px 12px rgba(180, 60, 100, 0.12);
+    --nav-bg: rgba(255, 245, 248, 0.92);
+    --avatar-from: #c2185b;
+    --avatar-to: #e91e63;
+    --avatar-border: #ffffff;
+    --on-accent: #ffffff;
+    --particle-opacity: 1;
+    --particle-color: 255, 150, 180;
+  }
+
+  [data-theme="sky"] {
+    --bg: #f0f8ff;
+    --bg-sidebar: #e0f0ff;
+    --text: #1a3a5c;
+    --text-soft: #3a5a7c;
+    --text-muted: #6a8aa8;
+    --accent: #0284c7;
+    --accent-hover: #0369a1;
+    --accent-soft: #d8efff;
+    --rule: #b8d8ee;
+    --rule-soft: #d0e8f5;
+    --badge-dark: #0c4a6e;
+    --badge-outline: #4a8ab0;
+    --shadow: 0 1px 3px rgba(20, 80, 140, 0.10);
+    --proj-shadow: 0 4px 12px rgba(20, 80, 140, 0.12);
+    --nav-bg: rgba(240, 248, 255, 0.92);
+    --avatar-from: #0369a1;
+    --avatar-to: #0284c7;
+    --avatar-border: #ffffff;
+    --on-accent: #ffffff;
+    --particle-opacity: 1;
+    --particle-color: 120, 200, 255;
+  }
+
+  /* ===== Theme 6: Cloud / Blue Sky (static, non-animated) ===== */
+  [data-theme="cloud"] {
+    --bg: #e8f4ff;
+    --bg-sidebar: rgba(255, 255, 255, 0.62);
+    --text: #0e3c66;
+    --text-soft: #2a5a86;
+    --text-muted: #5a8cb8;
+    --accent: #1e6bc7;
+    --accent-hover: #174f96;
+    --accent-soft: rgba(30, 107, 199, 0.12);
+    --rule: rgba(30, 107, 199, 0.22);
+    --rule-soft: rgba(30, 107, 199, 0.12);
+    --badge-dark: #0c4a6e;
+    --badge-outline: #4a8ab0;
+    --shadow: 0 1px 3px rgba(20, 70, 140, 0.12);
+    --proj-shadow: 0 4px 14px rgba(20, 70, 140, 0.15);
+    --nav-bg: rgba(255, 255, 255, 0.60);
+    --avatar-from: #1e6bc7;
+    --avatar-to: #3b82f6;
+    --avatar-border: #ffffff;
+    --on-accent: #ffffff;
+    --particle-opacity: 0;
+    --particle-color: 255, 255, 255;
+  }
+
+  /* Multi-layer radial-gradient clouds + blue sky gradient, FIXED (does not move when scrolling) */
+  [data-theme="cloud"] body {
+    background:
+      /* --- Cloud #1: top-left large fluffy cloud (3 overlapping ellipses) --- */
+      radial-gradient(ellipse 260px 90px at 18% 14%, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.70) 45%, transparent 75%),
+      radial-gradient(ellipse 180px 70px at 26% 18%, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.60) 45%, transparent 75%),
+      radial-gradient(ellipse 120px 52px at 12% 20%, rgba(255,255,255,0.82) 0%, transparent 75%),
+      /* --- Cloud #2: top-right extra large cloud (4 overlapping ellipses) --- */
+      radial-gradient(ellipse 320px 100px at 85% 10%, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.70) 45%, transparent 75%),
+      radial-gradient(ellipse 200px 75px at 76% 16%, rgba(255,255,255,0.88) 0%, rgba(255,255,255,0.58) 45%, transparent 75%),
+      radial-gradient(ellipse 160px 64px at 95% 20%, rgba(255,255,255,0.86) 0%, transparent 75%),
+      radial-gradient(ellipse 120px 50px at 70% 10%, rgba(255,255,255,0.78) 0%, transparent 75%),
+      /* --- Cloud #3: small decorative around center --- */
+      radial-gradient(ellipse 110px 44px at 52% 28%, rgba(255,255,255,0.78) 0%, transparent 75%),
+      radial-gradient(ellipse 90px 36px  at 45% 58%, rgba(255,255,255,0.68) 0%, transparent 75%),
+      /* --- Cloud #4: mid-left medium cloud --- */
+      radial-gradient(ellipse 220px 80px at 10% 45%, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.55) 48%, transparent 78%),
+      radial-gradient(ellipse 120px 48px at 24% 48%, rgba(255,255,255,0.74) 0%, transparent 75%),
+      /* --- Cloud #5: mid-right medium cloud --- */
+      radial-gradient(ellipse 240px 85px at 94% 50%, rgba(255,255,255,0.90) 0%, rgba(255,255,255,0.55) 48%, transparent 78%),
+      radial-gradient(ellipse 130px 52px at 82% 54%, rgba(255,255,255,0.72) 0%, transparent 75%),
+      /* --- Cloud #6: bottom-left small --- */
+      radial-gradient(ellipse 130px 50px at 5% 78%, rgba(255,255,255,0.75) 0%, transparent 75%),
+      /* --- Cloud #7: horizon big clouds at bottom (two big puffy overlapped) --- */
+      radial-gradient(ellipse 420px 130px at 35% 93%, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.60) 50%, transparent 82%),
+      radial-gradient(ellipse 380px 120px at 72% 97%, rgba(255,255,255,0.96) 0%, rgba(255,255,255,0.60) 50%, transparent 82%),
+      radial-gradient(ellipse 200px 70px  at 10% 88%, rgba(255,255,255,0.78) 0%, transparent 75%),
+      radial-gradient(ellipse 220px 78px  at 96% 90%, rgba(255,255,255,0.76) 0%, transparent 75%),
+      /* --- Sky gradient backdrop (deeper blue top → pale near-white bottom, classic sky) --- */
+      linear-gradient(180deg, #8ec9ff 0%, #a8d6ff 20%, #c8e6ff 45%, #e4f3ff 72%, #f2faff 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  /* ===== Immersive frosted-glass layers for Cloud theme — blend seamlessly into the blue sky ===== */
+  /* Strategy: use very-low-alpha sky-blue-tinted surfaces (not plain white) + ultra-soft edges + no harsh shadows */
+
+  /* Sidebar — make it almost invisible; text appears to float directly above clouds */
+  [data-theme="cloud"] aside.sidebar {
+    background: rgba(236, 246, 255, 0.28);   /* pale sky-blue tint, not white */
+    backdrop-filter: blur(6px) saturate(140%);
+    -webkit-backdrop-filter: blur(6px) saturate(140%);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: none !important;
+    border-radius: 10px;
+    padding: 18px 18px 16px;
+  }
+
+  /* Nav bar — thin veil of sky, no heavy white block */
+  [data-theme="cloud"] nav.topnav {
+    background: rgba(236, 246, 255, 0.35);
+    backdrop-filter: blur(8px) saturate(150%);
+    -webkit-backdrop-filter: blur(8px) saturate(150%);
+    border-bottom-color: rgba(255, 255, 255, 0.38) !important;
+  }
+
+  /* Project cards & resume box — subtle frosted ring, not chunky panels */
+  [data-theme="cloud"] #resume .resume-box,
+  [data-theme="cloud"] .proj {
+    background: rgba(245, 250, 255, 0.38);
+    backdrop-filter: blur(8px) saturate(145%);
+    -webkit-backdrop-filter: blur(8px) saturate(145%);
+    border: 1px solid rgba(255, 255, 255, 0.38) !important;
+    box-shadow: 0 1px 2px rgba(30, 107, 199, 0.06) !important;
+  }
+
+  /* Skill tags — tiny watercolor-like dots */
+  [data-theme="cloud"] .skill-tag {
+    background: rgba(245, 250, 255, 0.38);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-color: rgba(255, 255, 255, 0.35) !important;
+  }
+
+  /* Section h2 underline + pub left bar: soften so clouds show through without lines cutting them */
+  [data-theme="cloud"] main.content h2 {
+    border-bottom-color: rgba(30, 107, 199, 0.22) !important;
+  }
+  [data-theme="cloud"] .pub {
+    border-left-color: rgba(30, 107, 199, 0.18) !important;
+  }
+  [data-theme="cloud"] .exp {
+    border-left-color: rgba(30, 107, 199, 0.18) !important;
+  }
+  [data-theme="cloud"] .edu-block {
+    border-left-color: rgba(30, 107, 199, 0.55) !important;
+  }
+
+  /* Publication / link pill: tint translucent */
+  [data-theme="cloud"] .pub-link {
+    background: rgba(30, 107, 199, 0.10);
+    border-color: rgba(30, 107, 199, 0.22);
+  }
+  [data-theme="cloud"] .pub-link:hover {
+    background: var(--accent);
+  }
+  [data-theme="cloud"] .badge-outline {
+    border-color: rgba(74, 138, 176, 0.55);
+    color: rgba(12, 74, 110, 0.82);
+  }
+
+  /* Floating controls (theme/language buttons, panel, tour tip): slightly more opaque than content cards for legibility, but still sky-tinted */
+  [data-theme="cloud"] .theme-toggle,
+  [data-theme="cloud"] .lang-toggle,
+  [data-theme="cloud"] .theme-panel,
+  [data-theme="cloud"] .tour-tip {
+    background: rgba(245, 250, 255, 0.55);
+    backdrop-filter: blur(10px) saturate(150%);
+    -webkit-backdrop-filter: blur(10px) saturate(150%);
+    border-color: rgba(255, 255, 255, 0.45) !important;
+  }
+  [data-theme="cloud"] .tour-tip::after {
+    background: rgba(245, 250, 255, 0.55);
+    border-color: rgba(255, 255, 255, 0.45) !important;
+  }
+
+  /* CV placeholder button: translucent */
+  [data-theme="cloud"] .cv-btn-secondary,
+  [data-theme="cloud"] .cv-btn-lg-secondary {
+    background: rgba(245, 250, 255, 0.32);
+    border-color: rgba(30, 107, 199, 0.45);
+  }
+
+  /* Avatar: subtle glow around the border so it pops softly from sky */
+  [data-theme="cloud"] .avatar {
+    box-shadow: 0 2px 14px rgba(30, 107, 199, 0.18), inset 0 0 0 1px rgba(255,255,255,0.4);
+  }
+
+  [data-theme="cloud"] #particleCanvas { display: none !important; }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+  body {
+    font-family: "Lora", "EB Garamond", Georgia, "Times New Roman", serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    font-size: 16.5px;
+    -webkit-font-smoothing: antialiased;
+    transition: background 0.5s ease, color 0.5s ease;
+  }
+
+  /* ---------- Navigation ---------- */
+  nav.topnav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: var(--nav-bg);
+    backdrop-filter: saturate(180%) blur(10px);
+    -webkit-backdrop-filter: saturate(180%) blur(10px);
+    border-bottom: 1px solid var(--rule-soft);
+    transition: background 0.4s ease, border-color 0.4s ease;
+    font-family: "Inter", "Source Sans 3", -apple-system, sans-serif;
+  }
+  .nav-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 14px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-brand {
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0.2px;
+    color: var(--text);
+    text-decoration: none;
+  }
+  .nav-brand .dot { color: var(--accent); }
+  .nav-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+  }
+  .nav-links a {
+    color: var(--text-soft);
+    text-decoration: none;
+    font-size: 14.5px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    transition: color 0.18s ease;
+    position: relative;
+  }
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0; bottom: -4px;
+    width: 0; height: 1.5px;
+    background: var(--accent);
+    transition: width 0.22s ease;
+  }
+  .nav-links a:hover { color: var(--accent); }
+  .nav-links a:hover::after { width: 100%; }
+
+  /* ---------- Layout ---------- */
+  .layout {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 96px 32px 48px;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 56px;
+  }
+
+  /* ---------- Sidebar ---------- */
+  aside.sidebar {
+    position: sticky;
+    top: 96px;
+    align-self: start;
+  }
+  .avatar {
+    width: 168px;
+    height: 168px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--avatar-from) 0%, var(--avatar-to) 100%);
+    color: var(--on-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-size: 54px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+    box-shadow: var(--shadow);
+    border: 4px solid var(--avatar-border);
+    transition: background 0.5s ease, border-color 0.5s ease, color 0.5s ease;
+  }
+  .sidebar h1 {
+    font-family: "EB Garamond", "Lora", serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 6px;
+    color: var(--text);
+  }
+  .sidebar .name-cn {
+    font-size: 18px;
+    color: var(--text-muted);
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+  .sidebar .title {
+    font-size: 14.5px;
+    color: var(--text-soft);
+    line-height: 1.55;
+    margin-bottom: 18px;
+  }
+  .contact-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    font-family: "Inter", sans-serif;
+    font-size: 13.5px;
+  }
+  .contact-list li { display: flex; align-items: center; gap: 9px; }
+  .contact-list svg {
+    width: 16px; height: 16px;
+    flex-shrink: 0;
+    color: var(--accent);
+  }
+  .contact-list a {
+    color: var(--text-soft);
+    text-decoration: none;
+    transition: color 0.15s ease;
+    word-break: break-all;
+  }
+  .contact-list a:hover { color: var(--accent); text-decoration: underline; }
+
+  .cv-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 22px;
+    padding: 10px 20px;
+    background: var(--accent);
+    color: var(--on-accent) !important;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background 0.18s ease, transform 0.15s ease;
+    box-shadow: var(--shadow);
+  }
+  .cv-btn:hover {
+    background: var(--accent-hover);
+    transform: translateY(-1px);
+    text-decoration: none !important;
+  }
+  .cv-btn svg { width: 15px; height: 15px; }
+
+  /* ---------- Main Content ---------- */
+  main.content section {
+    margin-bottom: 44px;
+    scroll-margin-top: 80px;
+  }
+  main.content h2 {
+    font-family: "EB Garamond", serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+    border-bottom: 1.5px solid var(--rule);
+    letter-spacing: 0.3px;
+  }
+  main.content p {
+    color: var(--text-soft);
+    margin-bottom: 14px;
+    text-align: justify;
+  }
+  main.content p:last-child { margin-bottom: 0; }
+
+  /* ---------- Publications ---------- */
+  .pub-list { display: flex; flex-direction: column; gap: 22px; }
+  .pub {
+    padding-left: 18px;
+    border-left: 3px solid var(--rule-soft);
+    transition: border-color 0.2s ease;
+  }
+  .pub:hover { border-left-color: var(--accent); }
+  .pub-title {
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--text);
+    margin-bottom: 4px;
+    line-height: 1.4;
+  }
+  .pub-authors {
+    font-size: 15px;
+    color: var(--text-soft);
+    margin-bottom: 3px;
+  }
+  .pub-authors .me {
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 2px;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .pub-venue {
+    font-style: italic;
+    font-size: 15px;
+    color: var(--text-muted);
+    margin-bottom: 9px;
+  }
+  .pub-links { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  .badge {
+    display: inline-block;
+    font-family: "Inter", sans-serif;
+    font-size: 11.5px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 12px;
+    letter-spacing: 0.3px;
+  }
+  .badge-dark {
+    background: var(--badge-dark);
+    color: var(--on-accent);
+  }
+  .badge-outline {
+    background: transparent;
+    color: var(--badge-outline);
+    border: 1px solid var(--badge-outline);
+  }
+  .pub-link {
+    font-family: "Inter", sans-serif;
+    font-size: 12.5px;
+    font-weight: 500;
+    color: var(--accent);
+    text-decoration: none;
+    padding: 3px 9px;
+    border: 1px solid var(--accent-soft);
+    border-radius: 3px;
+    background: var(--accent-soft);
+    transition: all 0.15s ease;
+  }
+  .pub-link:hover {
+    background: var(--accent);
+    color: var(--on-accent);
+    border-color: var(--accent);
+    text-decoration: none;
+  }
+
+  /* ---------- Experience / Education ---------- */
+  .exp-list { display: flex; flex-direction: column; gap: 22px; }
+  .exp { position: relative; padding-left: 18px; border-left: 3px solid var(--rule-soft); }
+  .exp:hover { border-left-color: var(--accent); }
+  .exp-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 3px;
+  }
+  .exp-org {
+    font-weight: 700;
+    font-size: 16.5px;
+    color: var(--text);
+  }
+  .exp-date {
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    color: var(--text-muted);
+    white-space: nowrap;
+  }
+  .exp-role {
+    font-size: 15px;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  .exp-loc {
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+  }
+  .exp-desc {
+    font-size: 15px;
+    color: var(--text-soft);
+    line-height: 1.6;
+  }
+
+  .edu-block { padding-left: 18px; border-left: 3px solid var(--accent); }
+  .edu-meta {
+    font-size: 14.5px;
+    color: var(--text-soft);
+    margin-top: 4px;
+  }
+  .edu-meta strong { color: var(--text); font-weight: 600; }
+  .edu-courses {
+    margin-top: 6px;
+    font-size: 14.5px;
+    color: var(--text-soft);
+  }
+  .edu-honor {
+    margin-top: 6px;
+    font-size: 14.5px;
+    color: var(--text-soft);
+  }
+  .edu-honor::before {
+    content: "★ ";
+    color: var(--accent);
+  }
+
+  /* ---------- Projects ---------- */
+  .proj-list { display: flex; flex-direction: column; gap: 14px; }
+  .proj {
+    padding: 14px 18px;
+    background: var(--bg-sidebar);
+    border-radius: 5px;
+    border: 1px solid var(--rule-soft);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+  }
+  .proj:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--proj-shadow);
+    border-color: var(--rule);
+  }
+  .proj-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+  .proj-title {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--text);
+  }
+  .proj-title a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s ease;
+  }
+  .proj-title a:hover {
+    border-bottom-color: var(--accent);
+    color: var(--accent);
+  }
+  .proj-score {
+    font-family: "Inter", sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--on-accent);
+    background: var(--accent);
+    padding: 2px 9px;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+  .proj-tech {
+    font-size: 14px;
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  /* ---------- Skills / Languages ---------- */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+  .skill-block h3 {
+    font-family: "EB Garamond", serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+  .skill-tag {
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    padding: 4px 11px;
+    background: var(--bg-sidebar);
+    border: 1px solid var(--rule-soft);
+    border-radius: 3px;
+    color: var(--text-soft);
+  }
+  .lang-line {
+    font-size: 15px;
+    color: var(--text-soft);
+    line-height: 1.9;
+  }
+  .lang-line strong { color: var(--text); font-weight: 600; }
+
+  /* ---------- Resume section ---------- */
+  #resume .resume-box {
+    background: var(--bg-sidebar);
+    border: 1px solid var(--rule-soft);
+    border-radius: 6px;
+    padding: 26px 28px;
+    text-align: center;
+  }
+  #resume .resume-box p {
+    text-align: center;
+    margin-bottom: 16px;
+    color: var(--text-soft);
+  }
+  .cv-btn-lg {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 12px 28px;
+    background: var(--accent);
+    color: var(--on-accent);
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background 0.18s ease, transform 0.15s ease;
+    box-shadow: var(--shadow);
+  }
+  .cv-btn-lg:hover {
+    background: var(--accent-hover);
+    transform: translateY(-1px);
+  }
+  .cv-btn-lg svg { width: 17px; height: 17px; }
+
+  /* ---------- Footer ---------- */
+  footer {
+    border-top: 1px solid var(--rule-soft);
+    padding: 22px 32px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    color: var(--text-muted);
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 860px) {
+    .layout {
+      grid-template-columns: 1fr;
+      gap: 36px;
+      padding: 88px 22px 36px;
+    }
+    aside.sidebar {
+      position: static;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .contact-list { align-items: center; }
+    .contact-list li { justify-content: center; }
+    .nav-inner { padding: 12px 20px; }
+    .nav-links { gap: 16px; }
+    .nav-links a { font-size: 13.5px; }
+    .two-col { grid-template-columns: 1fr; gap: 20px; }
+    body { font-size: 16px; }
+  }
+  @media (max-width: 520px) {
+    .nav-links { gap: 11px; }
+    .nav-links a { font-size: 12.5px; }
+    .nav-brand { font-size: 15px; }
+    .avatar { width: 140px; height: 140px; font-size: 44px; }
+  }
+
+  /* ===== Theme Switcher ===== */
+  .theme-toggle {
+    position: fixed;
+    bottom: 26px;
+    right: 26px;
+    z-index: 300;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--bg-sidebar);
+    border: 1px solid var(--rule);
+    color: var(--accent);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease, border-color 0.2s ease, background 0.4s ease, color 0.4s ease;
+  }
+  .theme-toggle:hover {
+    transform: translateY(-3px) rotate(20deg);
+    border-color: var(--accent);
+  }
+  .theme-toggle svg { width: 21px; height: 21px; fill: currentColor; }
+
+  .theme-panel {
+    position: fixed;
+    bottom: 88px;
+    right: 26px;
+    z-index: 300;
+    background: var(--bg-sidebar);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    box-shadow: var(--proj-shadow);
+    opacity: 0;
+    transform: translateY(10px) scale(0.96);
+    pointer-events: none;
+    transition: opacity 0.22s ease, transform 0.22s ease, background 0.4s ease, border-color 0.4s ease;
+    min-width: 178px;
+    font-family: "Inter", sans-serif;
+  }
+  .theme-panel.open {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+  }
+  .theme-panel-title {
+    font-size: 10.5px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 2px 6px 6px;
+    border-bottom: 1px solid var(--rule-soft);
+    margin-bottom: 2px;
+  }
+  .theme-option {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    padding: 7px 9px;
+    border-radius: 7px;
+    border: none;
+    background: transparent;
+    color: var(--text-soft);
+    font-family: inherit;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease;
+    text-align: left;
+    width: 100%;
+  }
+  .theme-option:hover { background: var(--accent-soft); color: var(--text); }
+  .theme-option.active { color: var(--accent); background: var(--accent-soft); font-weight: 600; }
+  .theme-swatch {
+    width: 21px; height: 21px; border-radius: 50%;
+    border: 2px solid var(--rule);
+    flex-shrink: 0; position: relative; overflow: hidden;
+  }
+  .theme-option.active .theme-swatch::after {
+    content: ""; position: absolute; inset: 3px;
+    border-radius: 50%; border: 2px solid var(--accent);
+  }
+  .swatch-cream { background: linear-gradient(135deg, #faf5ea 50%, #b8860b 50%); }
+  .swatch-white { background: linear-gradient(135deg, #ffffff 50%, #2563eb 50%); }
+  .swatch-black { background: linear-gradient(135deg, #141414 50%, #64ffda 50%); }
+  .swatch-sakura { background: linear-gradient(135deg, #fff5f8 50%, #e91e63 50%); }
+  .swatch-sky { background: linear-gradient(135deg, #f0f8ff 50%, #0284c7 50%); }
+  /* Blue sky with white cloud preview for the Cloud theme swatch */
+  .swatch-cloud {
+    background:
+      radial-gradient(ellipse 9px 4px at 30% 38%, #ffffff 0%, transparent 75%),
+      radial-gradient(ellipse 11px 5px at 65% 62%, #ffffff 0%, transparent 75%),
+      linear-gradient(135deg, #b4dcff 50%, #8ec9ff 50%);
+  }
+  .theme-option .theme-label { flex: 1; }
+  .theme-option .theme-check { font-size: 12px; opacity: 0; color: var(--accent); }
+  .theme-option.active .theme-check { opacity: 1; }
+
+  /* ===== Particle Canvas ===== */
+  #particleCanvas {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    opacity: var(--particle-opacity);
+    transition: opacity 0.6s ease;
+  }
+  nav.topnav, .layout, footer { position: relative; z-index: 2; }
+
+  @media (max-width: 520px) {
+    .theme-toggle { bottom: 16px; right: 16px; width: 44px; height: 44px; }
+    .theme-panel { bottom: 72px; right: 16px; }
+    .lang-toggle { bottom: 16px; right: 72px; width: 44px; height: 44px; }
+    .tour-tip { bottom: 132px; right: 16px; left: 16px; max-width: none; }
+  }
+
+  /* ===== Language Switcher ===== */
+  .lang-toggle {
+    position: fixed;
+    bottom: 26px;
+    right: 86px;
+    z-index: 300;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--bg-sidebar);
+    border: 1px solid var(--rule);
+    color: var(--accent);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    transition: transform 0.2s ease, border-color 0.2s ease, background 0.4s ease, color 0.4s ease;
+  }
+  .lang-toggle:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+  }
+
+  /* ===== Language visibility rules ===== */
+  [data-lang="en"] .zh-only { display: none !important; }
+  [data-lang="zh"] .en-only { display: none !important; }
+  [data-lang="en"] .nav-lang-zh,
+  [data-lang="zh"] .nav-lang-en { display: none; }
+
+  /* ===== CV dual buttons ===== */
+  .cv-btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 22px;
+  }
+  .cv-btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: transparent;
+    color: var(--accent) !important;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: 1.5px solid var(--accent);
+    transition: background 0.18s ease, transform 0.15s ease;
+    opacity: 0.55;
+    cursor: not-allowed;
+  }
+  .cv-btn-secondary svg { width: 15px; height: 15px; }
+  .cv-btn-secondary .placeholder-note {
+    font-size: 11.5px;
+    color: var(--text-muted);
+    margin-left: auto;
+    font-weight: 500;
+  }
+  @media (max-width: 860px) {
+    .cv-btn-group { align-items: center; }
+  }
+
+  .cv-btn-lg-group {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .cv-btn-lg-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 12px 28px;
+    background: transparent;
+    color: var(--accent);
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: 1.5px solid var(--accent);
+    transition: background 0.18s ease, transform 0.15s ease;
+    box-shadow: var(--shadow);
+    opacity: 0.55;
+    cursor: not-allowed;
+  }
+  .cv-btn-lg-secondary svg { width: 17px; height: 17px; }
+  .cv-btn-lg-secondary .placeholder-note {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-left: 8px;
+    font-weight: 500;
+  }
+
+  /* Contact item - two email stacked */
+  .contact-list .email-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    line-height: 1.4;
+  }
+  .contact-list .email-tag {
+    display: inline-block;
+    font-size: 10.5px;
+    padding: 1px 6px;
+    border-radius: 3px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-weight: 600;
+    margin-left: 4px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+  }
+
+  /* ===== Onboarding Tour Tooltip ===== */
+  .tour-tip {
+    position: fixed;
+    bottom: 92px;
+    right: 26px;
+    z-index: 400;
+    max-width: 300px;
+    background: var(--bg-sidebar);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 18px 18px 16px 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.18), 0 2px 8px rgba(0,0,0,0.08);
+    font-family: "Inter", sans-serif;
+    opacity: 0;
+    transform: translateY(12px) scale(0.97);
+    pointer-events: none;
+    transition: opacity 0.35s ease, transform 0.35s ease, background 0.4s ease, border-color 0.4s ease;
+  }
+  .tour-tip.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+  }
+  .tour-tip::after {
+    content: "";
+    position: absolute;
+    right: 42px;
+    bottom: -8px;
+    width: 14px; height: 14px;
+    background: var(--bg-sidebar);
+    border-right: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    transform: rotate(45deg);
+    transition: background 0.4s ease, border-color 0.4s ease;
+  }
+  .tour-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .tour-title svg { width: 16px; height: 16px; color: var(--accent); flex-shrink: 0; }
+  .tour-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .tour-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--text-soft);
+    line-height: 1.45;
+  }
+  .tour-badge {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 1px;
+  }
+  .tour-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    border: none;
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 1;
+    transition: color 0.15s ease, background 0.15s ease;
+  }
+  .tour-close:hover {
+    color: var(--text);
+    background: var(--rule-soft);
+  }
+  .tour-done {
+    display: inline-block;
+    width: 100%;
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: none;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s ease;
+  }
+  .tour-done:hover { background: var(--accent-hover); }
+</style>
+</head>
+<body>
+
+<!-- Particle canvas for dynamic sakura / sky themes -->
+<canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+<!-- Theme switcher -->
+<button class="theme-toggle" id="themeToggle" aria-label="Switch theme" title="Switch theme" type="button">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7zm-1 19h2v1h-2v-1zm2-2h-2v-1h2v1z"/></svg>
+</button>
+<div class="theme-panel" id="themePanel">
+  <div class="theme-panel-title">Background</div>
+  <button class="theme-option active" data-theme="cream" type="button">
+    <span class="theme-swatch swatch-cream"></span>
+    <span class="theme-label">Cream 米黄</span>
+    <span class="theme-check">✓</span>
+  </button>
+  <button class="theme-option" data-theme="white" type="button">
+    <span class="theme-swatch swatch-white"></span>
+    <span class="theme-label">Pure White 纯白</span>
+    <span class="theme-check">✓</span>
+  </button>
+  <button class="theme-option" data-theme="black" type="button">
+    <span class="theme-swatch swatch-black"></span>
+    <span class="theme-label">Pure Black 纯黑</span>
+    <span class="theme-check">✓</span>
+  </button>
+  <button class="theme-option" data-theme="sakura" type="button">
+    <span class="theme-swatch swatch-sakura"></span>
+    <span class="theme-label">Sakura 樱花粉</span>
+    <span class="theme-check">✓</span>
+  </button>
+  <button class="theme-option" data-theme="sky" type="button">
+    <span class="theme-swatch swatch-sky"></span>
+    <span class="theme-label">Sky Blue 天蓝</span>
+    <span class="theme-check">✓</span>
+  </button>
+  <button class="theme-option" data-theme="cloud" type="button">
+    <span class="theme-swatch swatch-cloud"></span>
+    <span class="theme-label">Cloudy Sky 蓝天白云</span>
+    <span class="theme-check">✓</span>
+  </button>
+</div>
+
+<!-- Language switcher -->
+<button class="lang-toggle" id="langToggle" aria-label="Click to switch to Chinese" title="点击切换到中文" type="button">EN</button>
+
+<!-- Onboarding tour tip -->
+<div class="tour-tip" id="tourTip" role="dialog" aria-label="Welcome tips">
+  <button class="tour-close" id="tourClose" aria-label="Close tips" type="button">×</button>
+  <div class="tour-title en-only">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+    Welcome! Quick start
+  </div>
+  <div class="tour-title zh-only">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+    欢迎！快速上手
+  </div>
+  <ul class="tour-list en-only">
+    <li><span class="tour-badge">1</span>Click the <strong>light bulb</strong> (bottom right) to switch between 6 background themes.</li>
+    <li><span class="tour-badge">2</span>Click the <strong>"EN / 中"</strong> button (shows current language) to toggle between Chinese and English.</li>
+  </ul>
+  <ul class="tour-list zh-only">
+    <li><span class="tour-badge">1</span>点击右下角的<strong>小灯泡</strong>按钮，切换 6 种不同的背景主题。</li>
+    <li><span class="tour-badge">2</span>点击旁边显示<strong>「EN / 中」</strong>（当前语言标识）的按钮，切换中英文页面。</li>
+  </ul>
+  <button class="tour-done en-only" id="tourDone" type="button">Got it</button>
+  <button class="tour-done zh-only" id="tourDoneZh" type="button">我知道了</button>
+</div>
+
+<!-- ============ NAVIGATION ============ -->
+<nav class="topnav">
+  <div class="nav-inner">
+    <a href="#" class="nav-brand en-only">Han Wu<span class="dot">.</span></a>
+    <a href="#" class="nav-brand zh-only">吴翰<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-lang-en">About</a><a href="#about" class="nav-lang-zh">关于我</a></li>
+      <li><a href="#publications" class="nav-lang-en">Publications</a><a href="#publications" class="nav-lang-zh">学术成果</a></li>
+      <li><a href="#experience" class="nav-lang-en">Experience</a><a href="#experience" class="nav-lang-zh">经历</a></li>
+      <li><a href="#projects" class="nav-lang-en">Projects</a><a href="#projects" class="nav-lang-zh">项目</a></li>
+      <li><a href="#resume" class="nav-lang-en">Resume</a><a href="#resume" class="nav-lang-zh">简历</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============ LAYOUT ============ -->
+<div class="layout">
+
+  <!-- ---------- SIDEBAR ---------- -->
+  <aside class="sidebar">
+    <div class="avatar">WH</div>
+    <h1>Han Wu</h1>
+    <div class="name-cn">吴翰</div>
+    <div class="title en-only">
+      B.Eng. in Automation,<br />
+      Minored in Law (Intellectual Property),<br />
+      IEEE Honor Class,<br />
+      Shanghai Jiao Tong University
+    </div>
+    <div class="title zh-only">
+      上海交通大学 · <br />
+      自动化（IEEE试点班）<br />
+      工学学士 · 辅修法学（知识产权）
+    </div>
+    <ul class="contact-list">
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <div class="email-stack">
+          <a href="mailto:wuhan9918@gmail.com">wuhan9918@gmail.com<span class="email-tag en-only">Preferred</span><span class="email-tag zh-only">首选</span></a>
+          <a href="mailto:hanceschippers@sjtu.edu.cn">hanceschippers@sjtu.edu.cn<span class="email-tag en-only">School</span><span class="email-tag zh-only">学校</span></a>
+        </div>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        <a href="https://github.com/HanWu9918" target="_blank" rel="noopener">HanWu9918</a>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <a href="tel:+8619355693187">+86 193-5569-3187</a>
+      </li>
+    </ul>
+
+    <div class="cv-btn-group">
+      <a href="../../cv_en.pdf" class="cv-btn en-only">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+        View English CV
+      </a>
+      <a href="../../cv_en.pdf" class="cv-btn zh-only">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+        查看英文简历
+      </a>
+      <span class="cv-btn-secondary" title="Coming soon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+        <span class="en-only">Chinese CV</span><span class="zh-only">中文简历</span>
+        <span class="placeholder-note en-only">Coming soon</span><span class="placeholder-note zh-only">即将上线</span>
+      </span>
+    </div>
+  </aside>
+
+  <!-- ---------- MAIN ---------- -->
+  <main class="content">
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2 class="en-only">About</h2>
+      <h2 class="zh-only">关于我</h2>
+      <p class="en-only">
+        I am a final-year undergraduate at Shanghai Jiao Tong University (SJTU), majoring in Automation within the IEEE Honor Class, with a minor in Law (Intellectual Property). My research interests span large language models, multi-agent systems, and multimodal evaluation. I have been fortunate to be advised by Prof. Xinyi Le and collaborate with Shanghai AI Laboratory. My work on dynamic routing for Mixture-of-Agents has been accepted to ACL 2026 as a main-conference long paper.
+      </p>
+      <p class="zh-only">
+        上海交通大学自动化专业（IEEE试点班）本科四年级，辅修法学（知识产权方向）。研究兴趣涵盖大语言模型、多智能体系统以及多模态评测。有幸在乐心怡教授的指导下开展研究，并与上海人工智能实验室合作。关于动态路由的混合智能体架构（Mixture-of-Agents）研究工作已被 ACL 2026 主会长文录用。
+      </p>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+      <h2 class="en-only">Publications</h2>
+      <h2 class="zh-only">学术成果</h2>
+      <div class="pub-list">
+
+        <div class="pub">
+          <div class="pub-title en-only">RouteMoA: Dynamic Routing without Pre-Inference Boosts Efficient Mixture-of-Agents</div>
+          <div class="pub-title zh-only">RouteMoA：无需预推理的动态路由提升混合智能体系统效率</div>
+          <div class="pub-authors">Jize Wang, <span class="me">Han Wu</span>, et al.</div>
+          <div class="pub-venue en-only">ACL 2026 Main Conference (Long Paper)</div>
+          <div class="pub-venue zh-only">ACL 2026 主会长文</div>
+          <div class="pub-links">
+            <span class="badge badge-dark">ACL 2026</span>
+            <a class="pub-link" href="https://aclanthology.org/2026.acl-long.558/" target="_blank" rel="noopener">Paper</a>
+            <a class="pub-link" href="https://github.com/Jize-W/RouteMoA" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+
+        <div class="pub">
+          <div class="pub-title en-only">FilmBench: A Film-Grade Benchmark for Cinematic Video Generation</div>
+          <div class="pub-title zh-only">FilmBench：面向电影级视频生成的高质量评测基准</div>
+          <div class="pub-authors">Shengyi Wang, Niantong Li, ..., <span class="me">Han Wu</span>, et al.</div>
+          <div class="pub-venue en-only">arXiv preprint, under review at AAAI 2027</div>
+          <div class="pub-venue zh-only">arXiv 预印本，已投 AAAI 2027（审稿中）</div>
+          <div class="pub-links">
+            <span class="badge badge-outline">Under Review</span>
+            <a class="pub-link" href="https://arxiv.org/abs/2607.24241" target="_blank" rel="noopener">Paper</a>
+            <a class="pub-link" href="https://github.com/Neo-yk/FilmOps" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <h2 class="en-only">Experience</h2>
+      <h2 class="zh-only">经历</h2>
+      <div class="exp-list">
+
+        <div class="exp">
+          <div class="exp-head">
+            <div class="exp-org en-only">Alibaba Group, AI Data Team</div>
+            <div class="exp-org zh-only">阿里巴巴集团 · AI 数据团队</div>
+            <div class="exp-date">Jun 2026 – Present</div>
+          </div>
+          <div class="exp-role en-only">AI-Sparks Intern (Multimodal Benchmarking)</div>
+          <div class="exp-role zh-only">AI-Sparks 实习（多模态评测方向）</div>
+          <div class="exp-loc en-only">Hangzhou</div>
+          <div class="exp-loc zh-only">杭州</div>
+          <div class="exp-desc en-only">
+            Working on FilmBench (T2V/R2V benchmark) evaluating Seedance 2.0, Kling 3.0, Veo 3.1 etc.; and QwenEditBench for image editing evaluation, planned ICLR 2027 submission.
+          </div>
+          <div class="exp-desc zh-only">
+            参与 FilmBench（文生视频/图生视频评测基准）对 Seedance 2.0、可灵 3.0、Veo 3.1 等模型进行系统评测；同时负责图像编辑评测基准 QwenEditBench 的搭建，计划投 ICLR 2027。
+          </div>
+        </div>
+
+        <div class="exp">
+          <div class="exp-head">
+            <div class="exp-org en-only">Shanghai AI Laboratory &amp; SJTU</div>
+            <div class="exp-org zh-only">上海人工智能实验室 &amp; 上海交通大学</div>
+            <div class="exp-date">May 2025 – Sep 2025</div>
+          </div>
+          <div class="exp-role en-only">Researcher / Project Co-Lead</div>
+          <div class="exp-role zh-only">研究员 / 项目共同负责人</div>
+          <div class="exp-desc en-only">
+            RouteMoA project under Prof. Xinyi Le. Built dynamic routing MoA with mDeBERTaV3 router, reduced inference cost 89.8%, latency 63.6%. ACL 2026 paper.
+          </div>
+          <div class="exp-desc zh-only">
+            在乐心怡教授指导下主导 RouteMoA 项目，基于 mDeBERTaV3 路由实现动态路由的混合智能体架构；推理成本下降 89.8%，延迟下降 63.6%。相关工作被 ACL 2026 录用。
+          </div>
+        </div>
+
+        <div class="exp">
+          <div class="exp-head">
+            <div class="exp-org en-only">SJTU &amp; COMAC</div>
+            <div class="exp-org zh-only">上海交通大学 &amp; 中国商飞</div>
+            <div class="exp-date">Jun 2024 – Sep 2024</div>
+          </div>
+          <div class="exp-role en-only">Research Assistant</div>
+          <div class="exp-role zh-only">研究助理</div>
+          <div class="exp-desc en-only">
+            Aircraft cabin anomalous sound recognition under Assoc. Prof. Zhenyu Huang. MobileNetV3 classifier, 98.01% accuracy across 12 classes.
+          </div>
+          <div class="exp-desc zh-only">
+            在黄振宇副教授指导下，负责飞机客舱异常声音识别课题，基于 MobileNetV3 实现 12 类异常声音分类，准确率 98.01%。
+          </div>
+        </div>
+
+      </div>
+
+      <h2 class="en-only" style="margin-top: 36px;">Education</h2>
+      <h2 class="zh-only" style="margin-top: 36px;">教育背景</h2>
+      <div class="edu-block exp">
+        <div class="exp-head">
+          <div class="exp-org en-only">Shanghai Jiao Tong University</div>
+          <div class="exp-org zh-only">上海交通大学</div>
+          <div class="exp-date en-only">Aug 2023 – Jul 2027 (Expected)</div>
+          <div class="exp-date zh-only">2023 年 8 月 – 2027 年 7 月（预计）</div>
+        </div>
+        <div class="exp-role en-only">B.Eng. in Automation, IEEE Honor Class</div>
+        <div class="exp-role zh-only">工学学士 · 自动化（IEEE试点班）</div>
+        <div class="edu-meta en-only"><strong>Minor:</strong> Law (Intellectual Property). <strong>GPA:</strong> 3.36 / 4.30.</div>
+        <div class="edu-meta zh-only"><strong>辅修：</strong>法学（知识产权方向）。<strong>绩点：</strong>3.36 / 4.30。</div>
+        <div class="edu-courses en-only"><strong>Selected Coursework:</strong> Video Multimedia Retrieval (A+), Robotics (A+), AI Principles (A), Computer Vision (A).</div>
+        <div class="edu-courses zh-only"><strong>核心课程：</strong>视频多媒体检索（A+）、机器人学（A+）、人工智能原理（A）、计算机视觉（A）。</div>
+        <div class="edu-honor en-only">Zhiyuan Honors Scholarship.</div>
+        <div class="edu-honor zh-only">荣获致远荣誉奖学金。</div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2 class="en-only">Projects</h2>
+      <h2 class="zh-only">项目</h2>
+      <div class="proj-list">
+
+        <div class="proj">
+          <div class="proj-head">
+            <div class="proj-title">
+              <a href="https://github.com/HanWu9918/AI3705_project" target="_blank" rel="noopener" class="en-only">Multi-Agent Production Planning System</a>
+              <a href="https://github.com/HanWu9918/AI3705_project" target="_blank" rel="noopener" class="zh-only">多智能体生产计划与调度系统</a>
+            </div>
+            <span class="proj-score">96 / 100 · A+</span>
+          </div>
+          <div class="proj-tech">CoppeliaSim, LLM Agents</div>
+        </div>
+
+        <div class="proj">
+          <div class="proj-head">
+            <div class="proj-title">
+              <a href="https://github.com/PasserbyZzz/LLMBilliardsMaster" target="_blank" rel="noopener" class="en-only">AI Agents for Strategic Billiards Play</a>
+              <a href="https://github.com/PasserbyZzz/LLMBilliardsMaster" target="_blank" rel="noopener" class="zh-only">基于智能体的台球战术决策系统</a>
+            </div>
+            <span class="proj-score">93.5 / 100 · A</span>
+          </div>
+          <div class="proj-tech en-only">MCTS, Bayesian Optimization</div>
+          <div class="proj-tech zh-only">蒙特卡洛树搜索（MCTS）, 贝叶斯优化</div>
+        </div>
+
+        <div class="proj">
+          <div class="proj-head">
+            <div class="proj-title">
+              <a href="https://github.com/PasserbyZzz/PlateRecognition" target="_blank" rel="noopener" class="en-only">License Plate Recognition System</a>
+              <a href="https://github.com/PasserbyZzz/PlateRecognition" target="_blank" rel="noopener" class="zh-only">车牌识别系统</a>
+            </div>
+            <span class="proj-score">99 / 100 · A+</span>
+          </div>
+          <div class="proj-tech">OpenCV, PyTorch, LPRNet</div>
+        </div>
+
+      </div>
+
+      <div class="two-col" style="margin-top: 32px;">
+        <div class="skill-block">
+          <h3 class="en-only">Skills</h3>
+          <h3 class="zh-only">技能</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">OpenCV</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">LMDeploy</span>
+            <span class="skill-tag">OpenCompass</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">LaTeX</span>
+          </div>
+        </div>
+        <div class="skill-block">
+          <h3 class="en-only">English</h3>
+          <h3 class="zh-only">英语</h3>
+          <div class="lang-line"><strong>CET-4:</strong> 630</div>
+          <div class="lang-line"><strong>CET-6:</strong> 609</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume">
+      <h2 class="en-only">Resume</h2>
+      <h2 class="zh-only">简历</h2>
+      <div class="resume-box">
+        <p class="en-only">For a complete overview of my academic background, research experience, and projects, please view my full CV. The Chinese version will be uploaded shortly.</p>
+        <p class="zh-only">完整的学术背景、研究经历与项目信息请查阅我的简历。中文简历即将更新上线。</p>
+        <div class="cv-btn-lg-group">
+          <a href="../../cv_en.pdf" class="cv-btn-lg en-only">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+            English CV (PDF)
+          </a>
+          <a href="../../cv_en.pdf" class="cv-btn-lg zh-only">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+            英文简历 (PDF)
+          </a>
+          <span class="cv-btn-lg-secondary" title="Coming soon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+            <span class="en-only">Chinese CV</span><span class="zh-only">中文简历</span>
+            <span class="placeholder-note en-only">Coming soon</span><span class="placeholder-note zh-only">即将上线</span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <span class="en-only">&copy; 2026 Han Wu (吴翰) · Shanghai Jiao Tong University</span>
+  <span class="zh-only">&copy; 2026 吴翰 · 上海交通大学</span>
+  &nbsp;|&nbsp; <span class="en-only">Last updated:</span><span class="zh-only">最后更新：</span> <span id="last-updated">August 23, 2026</span>
+</footer>
+
+<script>
+  // Set last updated date from document lastModified (fallback to fixed date)
+  (function () {
+    var el = document.getElementById("last-updated");
+    try {
+      var d = new Date(document.lastModified);
+      if (!isNaN(d.getTime()) && d.getFullYear() > 2000) {
+        el.textContent = d.toLocaleDateString("en-US", {
+          year: "numeric", month: "long", day: "numeric"
+        });
+      }
+    } catch (e) { /* keep default */ }
+  })();
+</script>
+
+<script>
+  // ===== Theme Switching =====
+  (function () {
+    var themeToggle = document.getElementById("themeToggle");
+    var themePanel = document.getElementById("themePanel");
+    var themeOptions = document.querySelectorAll(".theme-option");
+    var THEME_KEY = "hw-academic-theme";
+
+    function applyTheme(theme) {
+      document.documentElement.setAttribute("data-theme", theme);
+      themeOptions.forEach(function (opt) {
+        opt.classList.toggle("active", opt.dataset.theme === theme);
+      });
+      try { localStorage.setItem(THEME_KEY, theme); } catch (e) {}
+      setParticleMode(theme);
+    }
+
+    themeToggle.addEventListener("click", function (e) {
+      e.stopPropagation();
+      themePanel.classList.toggle("open");
+    });
+    document.addEventListener("click", function (e) {
+      if (!themePanel.contains(e.target) && e.target !== themeToggle) {
+        themePanel.classList.remove("open");
+      }
+    });
+    themeOptions.forEach(function (opt) {
+      opt.addEventListener("click", function () {
+        applyTheme(opt.dataset.theme);
+        themePanel.classList.remove("open");
+      });
+    });
+
+    var savedTheme = null;
+    try { savedTheme = localStorage.getItem(THEME_KEY); } catch (e) {}
+
+    // ===== Particle Animation (Sakura petals / Sky bubbles) =====
+    var canvas = document.getElementById("particleCanvas");
+    var ctx = canvas.getContext("2d");
+    var particles = [];
+    var animId = null;
+    var mode = "none";
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+    function resizeCanvas() {
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = window.innerWidth * dpr;
+      canvas.height = window.innerHeight * dpr;
+      canvas.style.width = window.innerWidth + "px";
+      canvas.style.height = window.innerHeight + "px";
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    resizeCanvas();
+    window.addEventListener("resize", function () {
+      resizeCanvas();
+      if (mode !== "none") spawnParticles();
+    });
+
+    function readParticleColor() {
+      var raw = getComputedStyle(document.documentElement)
+        .getPropertyValue("--particle-color").trim();
+      var parts = raw.split(",").map(function (s) { return parseInt(s.trim(), 10); });
+      return { r: parts[0] || 255, g: parts[1] || 180, b: parts[2] || 200 };
+    }
+
+    function drawPetal(p) {
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.rotation);
+      ctx.globalAlpha = p.alpha;
+      ctx.fillStyle = "rgba(" + p.color.r + "," + p.color.g + "," + p.color.b + "," + p.alpha + ")";
+      ctx.beginPath();
+      ctx.ellipse(0, 0, p.size * 0.55, p.size, 0, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.globalAlpha = p.alpha * 0.5;
+      ctx.strokeStyle = "rgba(" + p.color.r + "," + p.color.g + "," + p.color.b + "," + (p.alpha * 0.6) + ")";
+      ctx.lineWidth = 0.6;
+      ctx.beginPath();
+      ctx.moveTo(0, -p.size * 0.8);
+      ctx.lineTo(0, p.size * 0.8);
+      ctx.stroke();
+      ctx.restore();
+    }
+
+    function drawBubble(p) {
+      ctx.save();
+      ctx.globalAlpha = p.alpha;
+      var grad = ctx.createRadialGradient(
+        p.x - p.size * 0.3, p.y - p.size * 0.3, 0,
+        p.x, p.y, p.size
+      );
+      grad.addColorStop(0, "rgba(255,255,255," + (p.alpha * 0.9) + ")");
+      grad.addColorStop(0.4, "rgba(" + p.color.r + "," + p.color.g + "," + p.color.b + "," + (p.alpha * 0.35) + ")");
+      grad.addColorStop(1, "rgba(" + p.color.r + "," + p.color.g + "," + p.color.b + "," + (p.alpha * 0.05) + ")");
+      ctx.fillStyle = grad;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.globalAlpha = p.alpha * 0.8;
+      ctx.fillStyle = "rgba(255,255,255,0.7)";
+      ctx.beginPath();
+      ctx.arc(p.x - p.size * 0.35, p.y - p.size * 0.35, p.size * 0.18, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+    }
+
+    function spawnParticles() {
+      var W = window.innerWidth, H = window.innerHeight;
+      var count = mode === "sakura"
+        ? Math.min(44, Math.floor(W / 34))
+        : Math.min(28, Math.floor(W / 52));
+      particles = [];
+      var color = readParticleColor();
+      for (var i = 0; i < count; i++) {
+        particles.push(createParticle(W, H, color, true));
+      }
+    }
+
+    function createParticle(W, H, color, initial) {
+      var base = {
+        x: Math.random() * W,
+        y: initial ? Math.random() * H : -20,
+        color: color,
+        alpha: 0.35 + Math.random() * 0.45,
+        rotation: Math.random() * Math.PI * 2
+      };
+      if (mode === "sakura") {
+        return Object.assign(base, {
+          size: 6 + Math.random() * 8,
+          speedY: 0.4 + Math.random() * 1.0,
+          swayAmp: 18 + Math.random() * 36,
+          swayFreq: 0.008 + Math.random() * 0.012,
+          swayPhase: Math.random() * Math.PI * 2,
+          rotSpeed: (Math.random() - 0.5) * 0.02,
+          baseX: 0
+        });
+      } else {
+        return Object.assign(base, {
+          size: 5 + Math.random() * 16,
+          speedY: -(0.3 + Math.random() * 0.7),
+          drift: (Math.random() - 0.5) * 0.35,
+          wobble: Math.random() * Math.PI * 2,
+          wobbleSpeed: 0.01 + Math.random() * 0.02
+        });
+      }
+    }
+
+    var lastTime = 0;
+    function animate(time) {
+      var W = window.innerWidth, H = window.innerHeight;
+      var dt = Math.min(time - lastTime, 50) || 16;
+      lastTime = time;
+      ctx.clearRect(0, 0, W, H);
+
+      for (var i = 0; i < particles.length; i++) {
+        var p = particles[i];
+        if (mode === "sakura") {
+          p.swayPhase += p.swayFreq * (dt / 16);
+          p.baseX = p.baseX || p.x;
+          p.x += Math.sin(p.swayPhase) * p.swayAmp * 0.02 + (dt / 16) * 0.13;
+          p.y += p.speedY * (dt / 16);
+          p.rotation += p.rotSpeed * (dt / 16);
+          if (p.y > H + 20 || p.x > W + 30) {
+            particles[i] = createParticle(W, H, p.color, false);
+            particles[i].x = Math.random() * W;
+          }
+          drawPetal(p);
+        } else {
+          p.wobble += p.wobbleSpeed * (dt / 16);
+          p.y += p.speedY * (dt / 16);
+          p.x += p.drift * (dt / 16) + Math.sin(p.wobble) * 0.28;
+          p.rotation += 0.005 * (dt / 16);
+          if (p.y < -30 || p.x < -30 || p.x > W + 30) {
+            particles[i] = createParticle(W, H, p.color, false);
+            particles[i].y = H + 20;
+          }
+          drawBubble(p);
+        }
+      }
+      animId = requestAnimationFrame(animate);
+    }
+
+    function setParticleMode(theme) {
+      var newMode = (theme === "sakura") ? "sakura"
+                  : (theme === "sky") ? "sky"
+                  : "none";
+      if (newMode === mode) return;
+      mode = newMode;
+      if (animId) { cancelAnimationFrame(animId); animId = null; }
+      if (mode !== "none") {
+        spawnParticles();
+        lastTime = 0;
+        animId = requestAnimationFrame(animate);
+      } else {
+        particles = [];
+        ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+      }
+    }
+
+    // Apply initial theme after particle state is initialized
+    applyTheme(savedTheme || "cream");
+  })();
+</script>
+
+<script>
+  // ===== Language Switching & Onboarding Tour =====
+  (function () {
+    var LANG_KEY = "hw-academic-lang";
+    var TOUR_KEY = "hw-academic-tour-dismissed";
+    var html = document.documentElement;
+    var langToggle = document.getElementById("langToggle");
+    var tourTip = document.getElementById("tourTip");
+    var tourClose = document.getElementById("tourClose");
+    var tourDoneEn = document.getElementById("tourDone");
+    var tourDoneZh = document.getElementById("tourDoneZh");
+
+    function setTitle(lang) {
+      if (lang === "zh") {
+        document.title = "吴翰 — 个人学术主页";
+      } else {
+        document.title = "Han Wu (吴翰) — Academic Homepage";
+      }
+    }
+
+    function applyLang(lang) {
+      html.setAttribute("data-lang", lang);
+      // Button shows the CURRENT language
+      var btnText = lang === "en" ? "EN" : "中";
+      langToggle.textContent = btnText;
+      var btnTitle = lang === "en" ? "点击切换到中文" : "Click to switch to English";
+      langToggle.setAttribute("title", btnTitle);
+      langToggle.setAttribute("aria-label", btnTitle);
+      setTitle(lang);
+      try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
+    }
+
+    langToggle.addEventListener("click", function () {
+      var current = html.getAttribute("data-lang") || "en";
+      applyLang(current === "en" ? "zh" : "en");
+    });
+
+    // Initialize language before tour so text matches
+    var savedLang = null;
+    try { savedLang = localStorage.getItem(LANG_KEY); } catch (e) {}
+    applyLang(savedLang || "en");
+
+    // ===== Onboarding tour =====
+    function showTour() {
+      if (!tourTip) return;
+      tourTip.classList.add("show");
+    }
+    function dismissTour() {
+      if (!tourTip) return;
+      tourTip.classList.remove("show");
+      try { localStorage.setItem(TOUR_KEY, "1"); } catch (e) {}
+    }
+
+    if (tourClose) tourClose.addEventListener("click", dismissTour);
+    if (tourDoneEn) tourDoneEn.addEventListener("click", dismissTour);
+    if (tourDoneZh) tourDoneZh.addEventListener("click", dismissTour);
+
+    // Clicking outside the tour tip also dismisses
+    document.addEventListener("click", function (e) {
+      if (!tourTip || !tourTip.classList.contains("show")) return;
+      if (
+        tourTip.contains(e.target) ||
+        e.target === langToggle ||
+        e.target === themeToggle ||
+        themePanel.contains(e.target)
+      ) return;
+      dismissTour();
+    });
+
+    var dismissed = null;
+    try { dismissed = localStorage.getItem(TOUR_KEY); } catch (e) {}
+    if (!dismissed) {
+      // Slight delay so buttons paint first
+      setTimeout(showTour, 700);
+    }
+  })();
+</script>
+
+</body>
+</html>
