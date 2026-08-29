@@ -605,6 +605,15 @@
     color: var(--text-soft);
     line-height: 1.6;
   }
+  .exp-highlights {
+    margin: 10px 0 0;
+    padding-left: 20px;
+    color: var(--text-soft);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .exp-highlights li { margin: 5px 0; }
+  .exp-highlights strong { color: var(--text); font-weight: 600; }
 
   .edu-block { padding-left: 18px; border-left: 3px solid var(--accent); }
   .edu-meta {
@@ -1370,12 +1379,18 @@
           <div class="exp-role zh-only">大模型评测实习生 · 数据技术与产品部</div>
           <div class="exp-loc en-only">Hangzhou</div>
           <div class="exp-loc zh-only">杭州</div>
-          <div class="exp-desc en-only">
-            Contributing to FilmBench, a film-grade T2V/R2V benchmark submitted to AAAI 2027, through model evaluation and annotation guidelines for cinematography, multi-shot continuity, instruction following, and motion aesthetics. Also supporting QwenEditBench, an open-source image-editing benchmark developed with Tongyi Lab, and quality-checking a subset of training data for the Qwen-Image team.
-          </div>
-          <div class="exp-desc zh-only">
-            参与 FilmBench（电影级文生视频/图生视频评测基准，AAAI 2027 在投），从镜头语言、多镜头连续性、指令遵循和动态美学等维度开展模型评测与标注规范设计；同时参与与通义实验室合作的开源图像编辑评测基准 QwenEditBench，并为 Qwen-Image 团队提供部分训练数据的整理与质检支持。
-          </div>
+          <ul class="exp-highlights en-only">
+            <li><strong>FilmBench:</strong> Contributed to a film-grade T2V/R2V benchmark submitted to AAAI 2027, evaluating HappyHorse, Seedance 2.0, Kling 3.0/Omni, Veo 3.1, Vidu, and Hailuo on curated cinematic prompts.</li>
+            <li>Assessed cinematography, multi-shot continuity, instruction following, and motion aesthetics, translating film-production concepts into consistent annotation guidelines.</li>
+            <li><strong>QwenEditBench:</strong> Supported an open-source image-editing benchmark developed with Tongyi Lab, refining the evaluation taxonomy for edit intent, instruction following, visual quality, and failure cases.</li>
+            <li><strong>Qwen-Image:</strong> Organised, filtered, and quality-checked a subset of image-generation training data against shared delivery standards.</li>
+          </ul>
+          <ul class="exp-highlights zh-only">
+            <li><strong>FilmBench：</strong>参与电影级 T2V/R2V 评测基准（AAAI 2027 在投），围绕精选电影化提示词评测 HappyHorse、Seedance 2.0、Kling 3.0/Omni、Veo 3.1、Vidu 和 Hailuo 等视频生成模型。</li>
+            <li>从镜头语言、多镜头连续性、指令遵循和动态美学等维度评估生成结果，并将电影制作概念转化为一致的标注规范。</li>
+            <li><strong>QwenEditBench：</strong>参与与通义实验室合作开发的开源图像编辑评测基准，完善编辑意图、指令遵循、视觉质量和失败案例的评测分类体系。</li>
+            <li><strong>Qwen-Image：</strong>根据统一交付规范，整理、筛选并质检部分图像生成训练数据。</li>
+          </ul>
         </div>
 
         <div class="exp">
