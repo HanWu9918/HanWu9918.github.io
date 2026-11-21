@@ -1,0 +1,32 @@
+/* V7 · 月夜星河 — classical midnight sky, rising moon, fireflies, lattice-window frames */
+html[data-theme="v7"] {
+  --bg: #090d28; --bg-sidebar: #0d1338; --text: #ece7d6; --text-soft: #c4c3d0; --text-muted: #8a8fb0;
+  --accent: #f3d58a; --accent-hover: #ffe7ad; --accent-soft: rgba(243,213,138,.10);
+  --rule: rgba(243,213,138,.4); --rule-soft: rgba(243,213,138,.2); --badge-dark: #f3d58a; --badge-outline: #f3d58a;
+  --shadow: none; --proj-shadow: none; --nav-bg: rgba(9,13,40,.78);
+  --avatar-from: #1b2260; --avatar-to: #1b2260; --avatar-border: #090d28; --on-accent: #090d28;
+  --seal: #f3d58a; --seal-fg: #1a1636; --ink: #fff6dd; --frame: rgba(243,213,138,.28); --mist: rgba(9,13,40,.0);
+  --card-bg: rgba(16,22,66,.62); --card-bd: rgba(243,213,138,.28); --r: 4px;
+  --card-sh: 0 12px 36px rgba(0,0,10,.35);
+  --card-sh-hover: 0 0 0 1px rgba(243,213,138,.35), 0 20px 50px rgba(0,0,10,.5), 0 0 40px rgba(243,213,138,.12);
+  --av-radius: 50%; --avatar-glow: 0 0 40px rgba(243,213,138,.35);
+  --tag-bg: rgba(243,213,138,.06);
+  --rb-bg: rgba(243,213,138,.08); --rb-bd: rgba(243,213,138,.45); --rb-fg: #f6ecd0; --rb-frame: rgba(243,213,138,.3);
+  --btn-bg: #f3d58a; --btn-fg: #1a1636;
+
+  & body {
+    background:
+      radial-gradient(800px 520px at 12% 6%, rgba(120,100,220,.20), transparent 70%),
+      radial-gradient(700px 500px at 90% 30%, rgba(60,120,220,.14), transparent 70%),
+      linear-gradient(180deg, #060924 0%, #0c1240 55%, #1a1a52 100%);
+  }
+  & .sidebar .name-cn { color: #f3d58a; }
+  & .exp-date, & .proj-score { background: rgba(243,213,138,.08); }
+  & .exp-highlights strong, & .edu-meta strong, & .edu-honor strong, & .edu-courses strong { color: #fff0c4; }
+  /* lattice-window look: doubled inner frame with notched corners */
+  & .pub::before, & .exp::before, & .edu-block::before, & .proj::before, & aside.sidebar::before, & #resume .resume-box::before {
+    inset: 6px; border-radius: 0;
+    clip-path: polygon(0 12px, 12px 12px, 12px 0, calc(100% - 12px) 0, calc(100% - 12px) 12px, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 12px calc(100% - 12px), 0 calc(100% - 12px));
+  }
+  & .skill-tag:hover { box-shadow: 0 0 18px rgba(243,213,138,.4); }
+}

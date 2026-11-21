@@ -1,0 +1,27 @@
+/* V8 · 落樱黄昏 — sunset gradient, distant violet hills, drifting cherry petals, translucent paper cards */
+html[data-theme="v8"] {
+  --bg: #fbe3dc; --bg-sidebar: #fbe3dc; --text: #3a2838; --text-soft: #5b4560; --text-muted: #94789a;
+  --accent: #b23a66; --accent-hover: #8d2a4f; --accent-soft: rgba(178,58,102,.08);
+  --rule: #c79ab0; --rule-soft: #ecc7d0; --badge-dark: #c2456b; --badge-outline: #c2456b;
+  --shadow: none; --proj-shadow: none; --nav-bg: rgba(255,238,232,.78);
+  --avatar-from: #c2456b; --avatar-to: #c2456b; --avatar-border: #fbe3dc; --on-accent: #fff;
+  --seal: #c2456b; --seal-fg: #fff5f1; --ink: #3a1f3a; --frame: rgba(194,69,107,.22); --mist: rgba(255,226,214,.0);
+  --card-bg: rgba(255,250,247,.66); --card-bd: rgba(255,255,255,.8); --r: 22px;
+  --card-sh: 0 10px 34px rgba(150,70,110,.14);
+  --card-sh-hover: 0 22px 50px rgba(150,70,110,.26);
+  --av-radius: 46% 54% 52% 48% / 52% 46% 54% 48%; --avatar-glow: 0 12px 34px rgba(194,69,107,.3);
+  --tag-bg: rgba(255,255,255,.55);
+  --rb-bg: linear-gradient(135deg, #7b4a8f, #c2456b 70%, #e88a7e); --rb-bd: transparent; --rb-fg: #fff3ec; --rb-frame: rgba(255,255,255,.35);
+  --btn-bg: #fff3ec; --btn-fg: #7b3a6e;
+
+  & body {
+    background:
+      radial-gradient(520px 520px at 82% 46%, rgba(255,214,150,.55), rgba(255,190,150,.18) 55%, transparent 72%),
+      linear-gradient(180deg, #f6c9d9 0%, #fbd7d0 38%, #ffe6cf 72%, #ffd9c2 100%);
+  }
+  & .pub::before, & .exp::before, & .edu-block::before, & .proj::before, & aside.sidebar::before, & #resume .resume-box::before { border-style: dashed; border-radius: 17px; opacity: .55; }
+  & .sidebar .name-cn { color: #b23a66; }
+  & .exp-role, & .proj-tech { color: #8d3f8a; }
+  & .avatar { box-shadow: 0 0 0 5px rgba(255,255,255,.85), 0 0 0 6px var(--seal), var(--avatar-glow); }
+  & main.content h2::before { border-radius: 50% 50% 50% 8%; transform: rotate(-12deg); }
+}
