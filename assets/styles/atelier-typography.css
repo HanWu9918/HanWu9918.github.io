@@ -1,0 +1,110 @@
+/* Claude's reading scale with Atelier's original display typography. */
+body[data-design="atelier"] {
+  --font-body: "Source Serif 4", "Noto Serif SC", "Songti SC", Georgia, serif;
+  --font-display: "Instrument Serif", "Noto Serif SC", "Songti SC", Georgia, serif;
+  --font-ui: "Inter", "Noto Sans SC", -apple-system, sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+}
+[data-design="atelier"] .nav-brand {
+  font-family: var(--font-display); font-size: 22px; font-weight: 600;
+  text-transform: none; letter-spacing: -.025em; transform: none;
+  background: transparent; color: var(--text); padding: 0;
+}
+[data-design="atelier"] .nav-links a {
+  font-family: var(--font-ui); font-size: 11px; font-weight: 600; letter-spacing: .05em;
+}
+[data-design="atelier"] .sidebar h1 {
+  margin-top: 32px; font-size: 52px; font-weight: 500;
+  font-style: italic; line-height: 1.12; letter-spacing: -.035em; transform: none;
+}
+[data-design="atelier"] .sidebar .name-cn {
+  font-family: "Noto Serif SC", serif; font-size: 19px; font-weight: 500;
+  line-height: 1.6; letter-spacing: .2em; margin-top: 10px; padding: 0;
+  background: transparent; color: var(--accent); transform: none;
+}
+[data-design="atelier"] .sidebar .title,
+[data-design="atelier"] .contact-list,
+[data-design="atelier"] .pub-authors,
+[data-design="atelier"] .pub-venue,
+[data-design="atelier"] .exp-role,
+[data-design="atelier"] .exp-loc,
+[data-design="atelier"] .exp-date,
+[data-design="atelier"] .proj-score,
+[data-design="atelier"] .proj-tech,
+[data-design="atelier"] .badge,
+[data-design="atelier"] .pub-link,
+[data-design="atelier"] .skill-tag,
+[data-design="atelier"] .skill-block h3,
+[data-design="atelier"] .cv-btn-lg,
+[data-design="atelier"] .cv-btn-lg-secondary,
+[data-design="atelier"] footer { font-family: var(--font-ui); }
+[data-design="atelier"] .sidebar .title { font-size: 13px; line-height: 1.8; font-weight: 400; }
+[data-design="atelier"] .contact-list a { font-family: var(--font-ui); font-size: 12px; line-height: 1.75; }
+[data-design="atelier"] .contact-list .email-tag { font-family: var(--font-ui); font-size: 9px; }
+[data-design="atelier"] main.content section { margin-bottom: 80px; }
+[data-design="atelier"] main.content h2 {
+  font-size: 46px; font-weight: 500; font-style: italic;
+  letter-spacing: -.025em; line-height: 1.2; border-top-width: 2px;
+  padding: 16px 0 12px; margin-bottom: 26px;
+}
+[data-design="atelier"] main.content h2::before { font-size: 11px; }
+[data-design="atelier"] main.content p,
+[data-design="atelier"] #about > p:first-of-type {
+  font-family: var(--font-body); font-size: 17px; font-weight: 400;
+  line-height: 1.85; color: var(--soft);
+}
+/* Scope the drop cap to English: Chinese keeps the existing paragraph layout. */
+html[data-lang="en"] [data-design="atelier"] #about > p.en-only:first-of-type::first-letter {
+  float: left; font: 900 76px/.82 "Playfair Display", Georgia, serif;
+  padding: 8px 12px 0 0; color: var(--accent);
+}
+[data-design="atelier"] #about > p.en-only:first-of-type::after { content: ""; display: block; clear: both; }
+[data-design="atelier"] .pub-title { max-width: 100%; font-size: 23px; font-weight: 500; line-height: 1.4; }
+[data-design="atelier"] .exp-org { font-size: 22px; font-weight: 500; line-height: 1.4; }
+[data-design="atelier"] .proj-title { font-family: var(--font-ui); font-size: 20px; font-weight: 700; line-height: 1.4; }
+/* Remove tight tracking from all item titles: schools, organizations, papers
+   and projects. Section headings and paragraph typography stay unchanged. */
+[data-design="atelier"] .pub-title,
+[data-design="atelier"] .exp-org,
+[data-design="atelier"] .proj-title { letter-spacing: normal; }
+[data-design="atelier"] .pub-authors { font-size: 13px; line-height: 1.7; }
+[data-design="atelier"] .pub-venue { font-size: 12px; line-height: 1.7; }
+[data-design="atelier"] .exp-date,
+[data-design="atelier"] .proj-score { font-size: 11px; letter-spacing: .015em; white-space: normal; }
+[data-design="atelier"] .exp-role { font-size: 14px; font-weight: 500; line-height: 1.7; }
+[data-design="atelier"] .exp-loc { font-size: 12px; }
+[data-design="atelier"] .exp-desc,
+[data-design="atelier"] .exp-highlights,
+[data-design="atelier"] .edu-meta,
+[data-design="atelier"] .edu-courses,
+[data-design="atelier"] .edu-honor,
+[data-design="atelier"] .proj-summary { font-size: 15px; line-height: 1.85; }
+[data-design="atelier"] .exp-highlights strong,
+[data-design="atelier"] .edu-meta strong,
+[data-design="atelier"] .edu-courses strong,
+[data-design="atelier"] .edu-honor strong { font-weight: 600; }
+[data-design="atelier"] .proj-tech { font-size: 11px; line-height: 1.7; }
+[data-design="atelier"] .badge,
+[data-design="atelier"] .pub-link,
+[data-design="atelier"] .skill-tag { font-size: 11px; letter-spacing: 0; }
+[data-design="atelier"] .skill-block h3 { font-size: 12px; font-weight: 600; letter-spacing: .08em; }
+[data-design="atelier"] #resume .resume-box p { color: inherit; font-size: 17px; }
+html[data-lang="zh"] [data-design="atelier"] { font-size: 16px; }
+html[data-lang="zh"] [data-design="atelier"] main.content p,
+html[data-lang="zh"] [data-design="atelier"] #about > p:first-of-type { font-size: 16px; line-height: 1.95; }
+html[data-lang="zh"] [data-design="atelier"] main.content h2 { font-size: clamp(29px, 2.6vw, 36px); letter-spacing: .02em; }
+html[data-lang="zh"] [data-design="atelier"] .pub-title,
+html[data-lang="zh"] [data-design="atelier"] .exp-org,
+html[data-lang="zh"] [data-design="atelier"] .proj-title { font-size: 21px; line-height: 1.6; }
+@media (max-width: 860px) {
+  [data-design="atelier"] .sidebar h1 { font-size: 44px; }
+  [data-design="atelier"] main.content h2 { font-size: 32px; }
+}
+@media (max-width: 620px) {
+  [data-design="atelier"] main.content section { margin-bottom: 64px; }
+  [data-design="atelier"] main.content p,
+  [data-design="atelier"] #about > p:first-of-type { font-size: 16px; }
+  [data-design="atelier"] .pub-title,
+  [data-design="atelier"] .exp-org { font-size: 21px; }
+}
